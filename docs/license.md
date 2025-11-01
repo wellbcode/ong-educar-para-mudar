@@ -1,0 +1,69 @@
+### ⚖️ Licença
+- [Licença MIT](license.md)
+
+Este projeto está licenciado sob os termos da **Licença MIT**, uma licença de software permissiva que permite reutilização com poucas restrições.
+
+---
+
+## 🧠 Sobre o Projeto
+O **Educar para Mudar** tem como missão promover o acesso à educação, cidadania e inclusão social através de uma plataforma digital acessível e moderna.
+
+Desenvolvido como projeto acadêmico e institucional, busca inspirar boas práticas na criação de sites para ONGs e iniciativas sociais.
+
+## 👨‍💻 Autor
+**Wellington Bertoso Santos**  
+Licenciado sob os termos da [Licença MIT](license.md).
+
+Copyright (c) 2025 Wellington
+
+É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia
+deste software e dos arquivos de documentação associados (o "Software"), para lidar
+com o Software sem restrições, incluindo, entre outros, os direitos
+de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender
+cópias do Software, e para permitir que as pessoas a quem o Software é
+fornecido o façam, sujeito às seguintes condições:
+
+O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as
+cópias ou partes substanciais do Software.
+
+O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
+IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO,
+ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUMA HIPÓTESE OS AUTORES OU TITULARES DOS DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER REIVINDICAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO CONTRATUAL, ATO ILÍCITO OU DE OUTRA FORMA, DECORRENTE DE,
+DE OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO
+SOFTWARE.
+
+## 📜 Texto da Licença MIT
+
+Copyright (c) 2025 Wellington e colaboradores
+
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software and associated documentation files (the "Software"), to deal  
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all  
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  
+SOFTWARE.
+
+---
+
+## 📌 Observações
+
+- Esta licença permite que outras pessoas usem, modifiquem e distribuam o projeto, inclusive para fins comerciais.
+- É obrigatório manter os créditos originais e o aviso de licença.
+- O projeto é fornecido **sem garantias**, e o autor não se responsabiliza por eventuais problemas decorrentes do uso.
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Ao contribuir com este projeto, você concorda que seu código será disponibilizado sob os mesmos termos da Licença MIT.

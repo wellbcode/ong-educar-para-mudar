@@ -1,0 +1,807 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url(../fonts/idroid.otf) format('opentype');
+}
+
+:root {
+  --one-color: #2c3e50;
+  --two-color: #18bc9c;
+  --three-color: #180f4a;
+  --four-color:#090422; 
+  --five-coolor: black;
+  --six-color: #ff0057;
+  --seven-color: #f4f4f4;
+  --eight-collor: #333;
+  --nine-color: white
+
+  --font-family: 'Segoe UI', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background-color: var(--seven-color);
+  transition: background-color 1s;
+  color: var(--eight-collor);
+}
+
+/* Dark Mode */
+.container{
+  position: absolute;
+  top: -150px;
+  left: 10px;
+  background: none;
+  border: none;
+  z-index: 10;
+  font-size: 1.4em;
+  width: fit-content;
+  height: fit-content;
+  transition: transform 0.2s;
+    
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+ .sun, .moon{
+    font-size: 10rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.sun, .moon:hover{
+   cursor: pointer;
+}
+
+.moon{
+    position: absolute;
+    inset: 0;
+}
+
+.moon-logo{
+    opacity: 0;
+    transform: translateY(20%) rotateZ(50deg);
+    transition: all 1s ease-out;
+}
+
+.sun-logo{
+    opacity: 1;
+    transform: translateY(0) rotateZ(0deg);
+    transition: all 1s ease-out;
+}
+
+.animate-sun{
+    opacity: 0;
+    transform: translateY(20%) rotateZ(100deg);
+}
+
+.animate-moon{
+    opacity: 1;
+    transform: translateY(0%) rotateZ(0deg);
+}
+
+.animate-moon path{
+  fill: white;
+}
+
+.animate-sun path{
+  fill: white;
+}
+
+/* Estilização do site */
+header { /* Cabeçalho **/
+  position: relative;
+  background-color: var(--one-color);
+  transition: background-color 1s;
+  min-height: 50px;
+  color: var(--nine-color);
+  padding: 1rem;
+
+}
+
+header h1{
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+  font-family: var(--font-destaque);
+  text-shadow: 2px 2px 0px rba(0, 0, 0, 0.67);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+nav a:hover {
+  border-bottom: 3px white solid;
+}
+
+/* Ícone do menu hamburger animado */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 1100;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* animação leve ao clicar */
+.menu-toggle:active {
+  transform: scale(0.9);
+}
+
+.menu-toggle span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Barras nas posições iniciais */
+.menu-toggle span:nth-child(1) { 
+  top: 0; 
+}
+
+.menu-toggle span:nth-child(2) {
+   top: 10px;
+}
+
+/* Estado ativo (vira X e muda de cor) */
+.menu-toggle span:nth-child(3) {
+  bottom: 0;
+}
+
+/* vermelho moderno */
+.menu-toggle.active span {
+  background-color: #ff4b4b;
+} 
+
+/* Animação do X */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 10px;
+}
+
+/* garante que o posicionamento absoluto se baseie no nav */
+nav {
+  position: relative;
+}
+
+/* container da busca */
+.search-container {
+  position: absolute;
+  right: 20px; /* encosta no canto direito do nav */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+/* ícone da lupa */
+.search-icon {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* barra de busca */
+.search-bar {
+  position: absolute;
+  right: 35px; /* colada à esquerda da lupa */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* input */
+.search-bar input {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+  outline: none;
+}
+
+/* botão fechar */
+.search-bar .close-btn {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* quando ativa */
+.search-bar.active {
+  width: 250px;
+  opacity: 1;
+}
+
+/* recipiente dos slides */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.resultados-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.resultado-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.resultado-card:hover {
+  transform: scale(1.01);
+}
+
+.resultado-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.resultado-card a {
+  color: #0077cc;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.card-img {
+  max-width: 100px;
+  margin: 10px 5px 0 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.card-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.card-pessoas {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.subcard {
+  background: #f5f5f5;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 4px solid #0077cc;
+  border-radius: 6px;
+}
+
+mark {
+  background-color: #fff176;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+.resultado-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card-img {
+  max-width: 100px;
+  margin: 10px 5px 0 0;
+  border-radius: 6px;
+}
+
+.card-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.card-pessoas {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.subcard {
+  /* background: #f5f5f5; */
+  background-image: linear-gradient(to left, 
+  var(--two-color), transparent);
+  color: #000;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 4px solid #0077cc;
+  border-radius: 6px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.search-icon:hover i {
+  animation: pulse 0.6s infinite;
+  color: #00bfff; /* azul claro */
+}
+
+main {
+  padding: 2rem;
+}
+
+.texto{
+  font-family: 'Lobster', cursive;
+  color: #180f4a;
+  font-size: 34px;
+}
+
+/* Slideshow container */
+
+.fade {/* Fading animation */
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slideshow-container {
+  width: 100%;
+  /*max-width: 1200px;  largura máxima */
+  height: auto;
+  max-height: 700px; /* evita ficar enorme em telas grandes */
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.699);
+}
+
+/* Imagens */
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantém proporção e preenche sem distorcer */
+}
+
+/* Botões Prev e Next */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* centraliza verticalmente */
+  transform: translateY(-50%);
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 10px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Posição dos botões */
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Texto da legenda (opcional) */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50px; /* ajustado para não colidir com os dots */
+  width: 100%;
+  text-align: center;
+}
+
+/* Número do slide (ex: 1/3) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Dots (indicadores) */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #2c3e50;
+}
+
+/* Container dos dots */
+.dots-container {
+  position: absolute;
+  bottom: 15px; /* mais próximo do bottom da imagem */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  z-index: 5;
+}
+
+.titulo{
+  background-image: linear-gradient(to right, 
+  var(--two-color), transparent);
+  text-align: justify;
+  margin: 50px;
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+/*Secão da equipe, 3 colunas lado a lado*/
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+.column {
+  float: left;
+   /*width: 33.33%; 
+  flex: 1 1 300px;
+  /* background-color: var(--eight-collor); */
+  background-color: var(--six-color);
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.card img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.container-team {
+  position: absolute;
+  bottom: 0;
+  background: var(--seven-color);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Efeito hover: imagem sobe e texto aparece */
+.card:hover img {
+  transform: translateY(-100%);
+}
+
+.card:hover .container-team {
+  cursor: pointer;
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Estilo adicional */
+.name{
+  color: black;
+  font-size: 20px;
+}
+
+.title {
+  color: grey;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Clear floats */
+.container-team::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+footer{
+    clear: both;
+    margin-top: 100px;
+    height: 200px;
+    background-image: linear-gradient(180deg, var(--three-color), var(--four-color), var(--five-coolor));
+    color: white;
+    text-align: center;
+    border-top: 5px solid var(--six-color);
+}
+
+footer p{
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+}
+footer a{
+   text-decoration: none;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+footer img:hover{
+    border: 2px solid white;
+    padding: 2px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#img {
+    width: 100px;
+}
+
+.whats {
+    position: fixed;
+    bottom: 2px;
+    right: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 60%;
+    }
+}
+
+/* Responsividade do menu */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    background-color: var(--one-color);
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Display the columns below each other instead of side by side on telas pequenas */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
+    .search-bar.active {
+  width: 250px; /* largura quando clica na lupa */
+  right: 90px;
+  opacity: 1;
+}
+}
+
+/* Responsividade extra */
+
+/* ==== AJUSTES RESPONSIVOS HEADER ==== */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 2.8rem; /* reduz o tamanho em telas médias */
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem 0.5rem;
+  }
+  header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  .menu-toggle { /* ícone menu hamburger */
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    transform: scale(1.1);
+  }
+  .container { /* ícone modo escuro */
+    position: absolute;
+    margin-top: 40px;
+    left: 15px;
+    transform: scale(1.1);
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+    .prev, .next {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+  .search-container {
+    position: static;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .search-bar.active {
+    width: 60%;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+    padding: 0 10px;
+  }
+
+  .menu-toggle {
+    top: 12px;
+    left: 12px;
+    transform: scale(1);
+  }
+
+  .container {
+    top: 12px;
+    right: 12px;
+    transform: scale(1);
+  }
+}

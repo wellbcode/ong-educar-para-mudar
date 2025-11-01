@@ -1,0 +1,125 @@
+[
+  {
+    "title": "blog",
+    "url": "blog.html",
+    "content": "Blog | ONG Educar para mudar sunny dark_mode ONG Educar para mudar Início Sobre Projetos Voluntariado Doações Transparência Contato Blog Blog e Notícias Acompanhe as últimas atualizações, eventos e conquistas da ONG Educar para mudar. Últimas Publicações ONG Educar para mudar lança projeto de alfabetização digital Data: 15 de setembro de 2025 O novo projeto visa capacitar jovens e adultos em habilidades digitais essenciais para o mercado de trabalho. Leia mais Campanha de arrecadação supera meta em tempo recorde Data: 05 de Outubro de 2025 Com apoio da comunidade, arrecadamos R$ 50 mil em apenas 10 dias para o projeto Saúde na Comunidade. Leia mais Newsletter Cadastre seu e-mail para receber novidades: Selecione os temas de interesse: Educação Saúde Meio Ambiente Assinar Newsletter Área de Imprensa Release: Projeto de Alfabetização Digital Release: Campanha Saúde na Comunidade © 2025 ONG Educar para mudar. Todos os direitos reservados.",
+     "images": [],
+    "cards": [],
+    "people": []
+  },
+  {
+    "title": "contato",
+    "url": "contato.html",
+    "content": "Contato | ONG Educar para mudar sunny dark_mode ONG Educar para mudar Início Sobre Projetos Voluntariado Doações Transparência Contato Blog Fale Conosco Entre em contato com nossa equipe para dúvidas, sugestões ou parcerias. Informações de Contato Endereço: Rua da Solidariedade, 123 - São Paulo/SP Telefone: (11) 967684819 E-mail: contato@ongfakedigital.org.br Horário de atendimento: Segunda a sexta, das 9h às 17h Formulário de Contato Dados do Remetente Nome completo: E-mail: Assunto: Selecione Dúvida Sugestão Parceria Outros Mensagem Escreva sua mensagem: Anexar arquivo (PDF, imagem ou documento): Enviar Mensagem © 2025 ONG Educar para mudar. Todos os direitos reservados.",
+    "images": [],
+    "cards": [],
+    "people": []
+  },
+  {
+    "title": "doacoes",
+    "url": "doacoes.html",
+    "content": "Doações | ONG Educar para mudar sunny dark_mode ONG Educar para mudar Início Sobre Projetos Voluntariado Doações Transparência Contato Blog Campanhas de Arrecadação Ajude a financiar nossos projetos sociais e faça parte da transformação. Doação Online Dados do Doador Nome completo: E-mail: Telefone: Informações da Doação Valor da doação (R$): Forma de pagamento: Selecione PIX Boleto Cartão de crédito Mensagem de apoio (opcional): Realizar Doação Meta e Progresso Meta da campanha: R$ 50.000 Arrecadado até agora: R$ 32.000 Prestação de Contas Todos os recursos arrecadados são destinados diretamente aos nossos projetos. Acesse os relatórios na página de transparência . © 2025 ONG Educar para mudar. Todos os direitos reservados.",
+    "images": [],
+    "cards": [
+      { "title": "Campanha Saúde na Comunidade", "text": "Arrecadação de fundos para saúde comunitária" },
+      { "title": "Campanha Educação Digital", "text": "Projeto de alfabetização digital" }
+    ],
+    "people": []
+  },
+  {
+    "title": "documentacao",
+    "url": "documentacao.html",
+    "content": "Documentação do Projeto ONG 📚 Documentação do Projeto ONG README Arquitetura Formulários Validação HTML Gráficos Licença README Resumo do projeto, estrutura, tecnologias, como executar localmente e informações de autoria. Arquitetura Organização dos diretórios, tecnologias utilizadas, estrutura das páginas e boas práticas. Formulários Especificações dos formulários de contato, voluntariado e doações, com validações e objetivos. Validação HTML Ferramentas utilizadas, erros corrigidos, acessibilidade e resultados de auditoria. Gráficos Tipos de gráficos, ferramentas, fontes de dados e boas práticas visuais. Licença Termos da Licença MIT, permissões, responsabilidades e contribuições. Desenvolvido por Wellington • Projeto ONG",
+    "images": [],
+    "cards": [],
+    "people": []
+  },
+  {
+    "title": "documentation",
+    "url": "documentation.html",
+    "content": "Project Documentation — NGO Website ...",
+    "images": [],
+    "cards": [],
+    "people": []
+  },
+  {
+    "title": "documentation",
+    "url": "documentation.html",
+    "content": "Project Documentation — NGO Website 🌍 Switch Language 📚 Project Documentation — NGO Website README Architecture Forms HTML Validation Charts License README This repository contains the source code and documentation for an institutional website developed for a Non-Governmental Organization (NGO). The goal is to promote transparency, engagement, and facilitate communication with the public. 📁 Project Structure projeto-ong/ ├── asset/ # Static files (CSS, JS, images, videos, etc.) ├── docs/ # Technical documentation in Markdown ├── *.html # Main website pages 🧰 Technologies Used HTML5 — Semantic page structure CSS3 — Styling and responsive layout Vanilla JavaScript — Interactivity and form validation Markdown (.md) — Technical documentation Visual Studio Code — Recommended code editor 📄 Website Pages index.html — Homepage sobre.html — Institutional information projetos.html — Project details transparencia.html — Financial transparency doacoes.html — Donation options voluntariado.html — Volunteer registration contato.html — Contact form blog.html — News and updates 📚 Documentation All technical documentation is located in the docs/ folder and includes: arquitetura.md — Project architecture especificacoes-formularios.md — Form specifications graficos.md — Charts and visualizations validacao-html.md — HTML validation license.md — Usage and distribution terms README.md — This overview 🚀 How to Run Locally Clone the repository: git clone https://github.com/your-username/projeto-ong.git Open the folder in VS Code: code projeto-ong Double-click index.html or use Live Server to preview in your browser. 🤝 Contributions Contributions are welcome! Feel free to open issues or submit pull requests with improvements, fixes, or new features. 📄 License This project is licensed under the terms of the MIT License . 👤 Author Developed by Wellington LinkedIn • GitHub Architecture This section describes the overall architecture of the NGO website project, including folder structure, technologies used, page organization, and development principles. 📁 Folder Structure projeto-ong/ ├── asset/ │ ├── audio/ # Audio files used on the site │ ├── css/ # Stylesheets │ ├── fonts/ # Custom fonts │ ├── img/ # Images used in pages │ ├── js/ # JavaScript scripts │ └── video/ # Video files ├── docs/ # Technical documentation in Markdown ├── blog.html # Blog page ├── contato.html # Contact page ├── doacoes.html # Donations page ├── index.html # Homepage ├── projetos.html # Projects page ├── sobre.html # About page ├── transparencia.html # Transparency page └── voluntariado.html # Volunteer page 🧪 Technologies Used HTML5 — Semantic structure of pages CSS3 — Styling and responsive layout Vanilla JavaScript — Interactivity and form validation Markdown (.md) — Technical documentation Visual Studio Code — Main code editor 🌐 Page Organization Each HTML page represents a specific section of the website: index.html — Homepage with NGO overview sobre.html — Institutional information projetos.html — Ongoing project details transparencia.html — Financial reports and accountability doacoes.html — Ways to contribute voluntariado.html — Volunteer registration and info contato.html — Contact form blog.html — Updates and publications 📱 Responsiveness The site is designed to be responsive and user-friendly across: Mobile devices (smartphones and tablets) Modern browsers (Chrome, Firefox, Edge, Safari) Minimum recommended resolution: 360px 🧭 Navigation and Usability Persistent main menu across all pages Internal and external links with visual feedback Semantic structure for accessibility (using <header> , <main> , <footer> , etc.) Compatible with screen readers 🔒 Best Practices Separation of concerns (HTML, CSS, JS in distinct folders) Clear and consistent naming conventions Code comments for clarity HTML validation via W3C tools Optimized fonts and images 📌 Final Notes The project architecture is designed for easy maintenance, scalability, and collaboration. Its modular structure allows new pages and features to be added with minimal effort. Forms This section describes the forms used throughout the NGO website, including their purpose, fields, validations, and best practices. 📬 Contact Form Purpose: Allow visitors to reach out to the NGO for questions, suggestions, or partnerships. Fields: Full name (required), Email (required), Subject (optional), Message (required) Validations: Valid email format, minimum 20 characters for message, name must not contain numbers Behavior: Displays success message after submission; may be integrated with email or backend 🤝 Volunteer Form Purpose: Register individuals interested in volunteering for NGO projects. Fields: Full name (required), Email (required), Phone (optional), Area of interest (required), Availability (required), Additional message (optional) Validations: Valid email format, phone number with Brazilian mask, required fields must be filled Behavior: Data may be stored in a database or sent via email; may include consent for data usage (LGPD) 💰 Donation Form Purpose: Facilitate donations from visitors. Fields: Name (optional), Donation amount (required), Payment method (required), Comment (optional) Validations: Minimum donation of R$10.00, required selection of payment method (Pix, credit card, boleto) Behavior: Redirects to payment gateway or displays QR code; may include automatic receipt ✅ Best Practices Use of label and placeholder for accessibility Visual feedback for invalid fields Clear and concise error messages Semantic grouping with <fieldset> and <legend> Mobile-friendly layout 🔐 Privacy Considerations All forms comply with Brazil's General Data Protection Law (LGPD) : Minimal data collection Explicit consent when required Clear purpose for each data field 📦 Future Integrations (Suggestions) Integration with Google Sheets or Airtable for storing responses Automatic confirmation emails Admin dashboard to view submissions HTML Validation This section presents the validation tests performed on the NGO website's HTML pages, focusing on compliance with web standards, accessibility, and development best practices. 🧪 Tools Used W3C Markup Validation Service — Official HTML validator: validator.w3.org Google Lighthouse — Auditing tool for performance, accessibility, and SEO HTMLHint — Real-time HTML code linter 📄 Validated Pages index.html sobre.html projetos.html transparencia.html doacoes.html voluntariado.html contato.html blog.html 🛠️ Issues Fixed Unclosed tags (e.g., <img> without /> ) Deprecated attributes removed (e.g., align , bgcolor ) Missing required attributes (e.g., alt for images) Improved semantic structure (replacing <div> with <section> , <article> , etc.) Duplicate id values corrected ♿ Accessibility Use of aria-label and role for interactive elements Color contrast verified via Lighthouse Keyboard navigation tested manually Proper heading hierarchy ( <h1> to <h6> ) 📈 Lighthouse Audit Results Metric Average Score Performance 85/100 Accessibility 95/100 Best Practices 100/100 SEO 90/100 📌 Future Recommendations Implement automated tests with Jest or Cypress Add sitemap.xml and robots.txt files Use accessibility tools like Axe or Wave ✅ Conclusion All project pages have been successfully validated and comply with HTML5 standards. The site is optimized for accessibility, SEO, and cross-browser compatibility. Charts This section describes the charts used in the NGO website, including their purpose, types, data sources, and visual best practices. 🎯 Purpose of Charts Present data in a visual and accessible way Reinforce the NGO’s commitment to transparency Make complex information easier to understand Engage visitors with dynamic content 📍 Chart Locations transparencia.html — Displays financial and impact data projetos.html — Shows project progress and results doacoes.html — Presents donation statistics 📈 Chart Types Type Purpose Page Pie Expense distribution transparencia.html Bar Donation comparison by period doacoes.html Line Project evolution over time projetos.html 🛠️ Tools Used Chart.js — Lightweight and responsive JavaScript chart library Google Charts (optional) — Alternative for external data integration Custom CSS — Styling to match site identity 📊 Data Sources Internal NGO reports Financial control spreadsheets Volunteer and donation records Social impact indicators 🎨 Visual Best Practices Accessible and contrasting colors Clear legends and labels Descriptive titles for each chart Responsive layout for mobile devices Periodic data updates 🔄 Chart Updates Charts are updated manually or via spreadsheet integration. Recommended practices: Monthly data updates Visual review for each new campaign or project Data validation before publishing 📌 Final Notes Using charts on the NGO website enhances transparency and credibility. It also improves user experience by presenting data in a clear and engaging format. License This project is licensed under the terms of the MIT License , a permissive open-source license that allows reuse with minimal restrictions. 📜 MIT License Text Copyright (c) 2025 Wellington and contributors Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 📌 Notes This license allows others to use, modify, and distribute the project, including for commercial purposes. Credit to the original author and license notice must be retained. The project is provided without warranty , and the author is not liable for any issues arising from its use. 🤝 Contributions Contributions are welcome! By contributing to this project, you agree that your code will be released under the same MIT License terms. Developed by Wellington • NGO Website Project"
+  },
+  {
+    "title": "index",
+    "url": "index.html",
+    "content": "ONG Educar para mudar cópia sunny dark_mode ONG Educar para mudar Início Sobre Projetos Voluntariado Doações Transparência Contato Blog × Bem-vindo à ONG Educar para mudar Transformando vidas através da ação social. 1 / 4 Serviço humanitário 2 / 4 Doações 3 / 4 Trabalho voluntário 4 / 4 Reciclar ❮ ❯ Conheça a equipe Wellington Bertoso Santos CEO & Fundador Estudante de Análises de desenvolvimento de Sistemas na Universidade Cruzeiro do Sul Virtual. Contato Mayra da Silva Diretora de arte Estudante de Análises de desenvolvimento de Sistemas na Universidade Cruzeiro do Sul Virtual. Contato Sabrina Evangelilsta Designer Estudante de Análises de desenvolvimento de Sistemas na Universidade Cruzeiro do Sul Virtual. Contato © 2025 ONG Educar para mudar. Todos os direitos reservados.",
+    "images": [
+      { "src": "asset/img/well.JPG", "alt": "Wellington Bertoso Santos, fundador" },
+      { "src": "asset/img/Mayra da Silva Gal.jpeg", "alt": "Mayra da Silva Gal, Diretora Pedagócica" },
+      { "src": "asset/img/Roberta Alexandre.jpg", "alt": "Roberta Ivanete Alexandre, Designer" }
+    ],
+    "cards": [
+      { "title": "Serviço humanitário", "text": "Ajudamos comunidades carentes através de ações sociais" },
+      { "title": "Doações", "text": "Como contribuir com nossos projetos" },
+      { "title": "Trabalho voluntário", "text": "Participe dos nossos projetos voluntariamente" },
+      { "title": "Reciclar", "text": "Projetos de sustentabilidade e reciclagem" }
+    ],
+    "people": [
+      { "name": "Wellington Bertoso Santos", "role": "Presidente & Fundador" },
+      { "name": "Mayra da Silva Gal", "role": "Diretora Pedagógica" },
+      { "name": "Roberta Ivanete Alexandre", "role": "Designer" }
+    ]
+  },
+  {
+    "title": "projetos",
+    "url": "projetos.html",
+    "content": "Projetos Sociais | ONG Educar para mudar sunny dark_mode ONG Educar para mudar Início Sobre Projetos Voluntariado Doações Transparência Contato Blog Projetos Sociais Conheça os projetos que estão transformando comunidades em todo o mundo. Projetos em Destaque Projeto Educar para o Futuro Oficinas de reforço escolar e inclusão digital para crianças e adolescentes. Categoria: Educação Impacto: 500 alunos atendidos em 2024 Projeto Saúde na Comunidade Atendimentos médicos gratuitos e campanhas de prevenção em áreas vulneráveis. Categoria: Saúde Impacto: 1.200 pessoas beneficiadas Galeria de Fotos Nossa galeria de fotos contempla várias belas imagens que mostram algums momentos marcantes dos nossos projetos em ação. como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição. Reforço escolar Atendimento médico comunitário # # # # # # # # # # # # Vídeos Institucionais Indicadores de Impacto © 2025 ONG Educar para mudar. Todos os direitos reservados.",
+     "images": [
+      { "src": "img/projeto1.jpg", "alt": "Oficinas de reforço escolar" },
+      { "src": "img/projeto2.jpg", "alt": "Atendimento médico comunitário" }
+    ],
+    "cards": [
+      { "title": "Projeto Educar para o Futuro", "text": "Oficinas de reforço escolar e inclusão digital" },
+      { "title": "Projeto Saúde na Comunidade", "text": "Atendimentos médicos gratuitos e campanhas de prevenção" }
+    ],
+    "people": []
+  },
+  {
+    "title": "sobre",
+    "url": "sobre.html",
+    "content": "ONG Educar para mudar sunny dark_mode ONG Educar para mudar Início Sobre Projetos Voluntariado Doações Transparência Contato Blog Sobre a ONG Educar para mudar Conheça nossa história, missão e os valores que nos movem. Missão Promover inclusão social por meio de projetos transformadores que impactam comunidades vulneráveis. Visão Ser referência nacional em inovação social e mobilização comunitária até 2030. Valores Transparência Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore ex odio sint modi! Odit, unde. A, aut repellendus. Quam vitae, quae aperiam sequi esse veritatis quidem totam voluptate labore! Empatia Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore ex odio sint modi! Odit, unde. A, aut repellendus. Quam vitae, quae aperiam sequi esse veritatis quidem totam voluptate labore! Comprometimento Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore ex odio sint modi! Odit, unde. A, aut repellendus. Quam vitae, quae aperiam sequi esse veritatis quidem totam voluptate labore! Inovação Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore ex odio sint modi! Odit, unde. A, aut repellendus. Quam vitae, quae aperiam sequi esse veritatis quidem totam voluptate labore! Respeito à diversidade Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita reiciendis iusto quibusdam enim porro explicabo alias saepe quaerat, natus, odit, voluptate laudantium? Minus voluptatem voluptatum doloribus fugit nam facilis laboriosam. Histórico e Conquistas Fundação A ONG Fake digital foi fundada em 2014 por um grupo de amigos. Principais Conquistas Mais de 10 mil pessoas impactadas diretamente Prêmio Nacional de Inovação Social (2020) Parcerias com 50+ instituições públicas e privadas Equipe e Estrutura Organizacional Diretoria Conheça os líderes que coordenam nossas ações estratégicas. Presidente: Wellington Bertoso Santos Diretora Executiva: Sabrina Evangelista Coordenadora de Projetos: Mayra da Silva Gal Organograma Em breve, disponibilizaremos um gráfico interativo com nossa estrutura organizacional. © 2025 ONG Educar para mudar. Todos os direitos reservados.",
+    "images": [],
+    "cards": [
+      { "title": "Missão", "text": "Promover inclusão social por meio de projetos transformadores" },
+      { "title": "Visão", "text": "Ser referência nacional em inovação social" },
+      { "title": "Valores", "text": "Transparência, Empatia, Comprometimento, Inovação, Respeito à diversidade" }
+    ],
+    "people": [
+      { "name": "Wellington Bertoso Santos", "role": "Presidente & Fundador" },
+      { "name": "Sabrina Evangelista", "role": "Diretora Executiva" },
+      { "name": "Mayra da Silva", "role": "Coordenadora de Projetos" }
+    ]
+  },
+  {
+    "title": "transparencia",
+    "url": "transparencia.html",
+    "content": "Transparência | ONG Educar para mudar sunny dark_mode ONG Educar para mudar Início Sobre Projetos Voluntariado Doações Transparência Contato Blog Transparência Nosso compromisso com a ética, clareza e responsabilidade na gestão dos recursos. Relatórios Financeiros Relatório Financeiro 2024 Relatório Financeiro 2023 Relatório Financeiro 2022 Documentos Públicos Estatuto Social Ata de Reunião Anual Termos de Parceria Distribuição de Recursos © 2025 ONG Educar para mudar. Todos os direitos reservados.",
+    "images": [],
+    "cards": [
+      { "title": "Relatórios Financeiros", "text": "Relatórios anuais de transparência" },
+      { "title": "Documentos Públicos", "text": "Estatuto Social, Ata de Reunião Anual, Termos de Parceria" }
+    ],
+    "people": []
+  },
+  {
+    "title": "voluntariado",
+    "url": "voluntariado.html",
+    "content": "Voluntariado | ONG Educar para mudar sunny dark_mode ONG Educar para mudar Início Sobre Projetos Voluntariado Doações Transparência Contato Blog Voluntariado Participe dos nossos projetos e ajude a transformar realidades. Oportunidades Abertas Mentoria educacional para jovens Campanhas de arrecadação e logística Produção de conteúdo e mídias sociais Atividades recreativas com crianças Cadastro de Voluntário Dados Pessoais Nome completo: CPF: Telefone: E-mail: Perfil e Disponibilidade Habilidades: Disponibilidade: Selecione Manhã Tarde Noite Fim de semana Por que deseja ser voluntário? Enviar Cadastro Histórico de Participação Voluntários cadastrados poderão acessar seu histórico de atividades e emitir certificados digitais. © 2025 ONG Educar para mudar. Todos os direitos reservados.",
+    "images": [],
+    "cards": [
+      { "title": "Mentoria educacional", "text": "Para jovens em projetos sociais" },
+      { "title": "Campanhas de arrecadação", "text": "Suporte logístico e operacional" },
+      { "title": "Produção de conteúdo e mídias sociais", "text": "Gerenciamento de redes e divulgação" },
+      { "title": "Atividades recreativas", "text": "Atividades com crianças" }
+    ],
+    "people": []
+  }
+]

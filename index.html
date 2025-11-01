@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plataforma para ONGs - ONG Educar para mudar" />
+  <title>ONG Educar para mudar cópia</title>
+  <link rel="stylesheet" href="asset/css/style.css" />
+  <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container"> <!-- Botão dark-mode-->
+        <div class="sun sun-logo">
+            <i><span class="material-symbols-outlined">sunny</span></i>
+        </div>
+
+        <div class="moon moon-logo">
+            <i><span class="material-symbols-outlined">dark_mode</span></i>
+        </div>
+  </div>
+    
+  <header> <!-- Cabeçalho -->
+    <h1>ONG Educar para mudar</h1>
+      <!-- Ícone do menu hamburger -->
+  <div class="menu-toggle" id="menu-toggle">
+    <!-- &#9776; -->
+     <span></span>
+     <span></span>
+     <span></span>
+  </div>
+    <nav id="navbar"> <!-- Menu de navegação -->     
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="transparencia.html">Transparência</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+
+      <!-- ícone da lupinha para fazer buscas site -->   
+      <div class="search-container">
+        <div class="search-bar" id="searchBar">
+          <input id="searchInput" type="text" placeholder="O que você procura?" onkeydown="checkEnter(event)">
+          <button class="close-btn">&times;</button>
+        </div>
+
+        <div class="search-icon" onclick="buscarEmTempoReal()">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main> <!-- Conteúdo principal -->
+    <div id="resultados" class="resultados-container"></div>
+    <section> <!-- Seção de boas-vindas -->
+      <h1 class="texto">Bem-vindo à ONG Educar para mudar</h1>
+      <p>Transformando vidas através da ação social.</p>
+    </section>
+  </main>
+
+ <section class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="asset/img/desktop1.jpeg" style="width:100%">
+      <div class="text">
+        <p style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;text-indent: 50px; text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.67);"><strong>Ajudamos comunidades carentes</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="asset/img/desktop2.jpeg">
+      <div class="text">
+        <p style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;text-indent: 50px; text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.67);"><strong>Fazemos doações</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="asset/img/desktop3.jpeg">
+      <div class="text">
+        <p style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;text-indent: 50px; text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.67);"><strong>Trabalho voluntário</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="asset/img/desktop4.jpg">
+      <div class="text">
+        <p style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;text-indent: 50px; text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.67);"><strong>Sustentabilidade e reciclagem</strong>
+        </p>
+      </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </section>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<h1 class="titulo">Conheça a equipe</h1>
+
+  <section class="row"><!-- Seção da equipe -->
+    <div class="column">
+      <div class="card">
+        <img src="asset/img/well.JPG" alt="Well">
+        <div class="container-team">
+          <h2 class="name"><strong>Wellington Bertoso Santos</strong></h2>
+          <p class="title">CEO &amp; Fundador</p>
+          <p class="description">Estudante de Análises de desenvolvimento de Sistemas na Universidade Cruzeiro do Sul Virtual.</p>
+          <p class="button">
+            <a href="mailto:wellingtonb.santos@hotmail.com" rel="external" target="_blank">Contato</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="asset/img/Mayra da Silva Gal.jpeg" alt="Mayra">
+        <div class="container-team">
+          <h2 class="name">Mayra da Silva Gal</h2>
+          <p class="title">Diretora Pedagógica</p>
+          <p class="description">Bacharel em Pedagogia pela Universidade Uninove.</p>
+          <p class="button">
+            <a href="mailto:wellingtonb.santos@hotmail.com" rel="external" target="_blank">Contato</a>
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="asset/img/Roberta Alexandre.jpg" alt="Roberta">
+        <div class="container-team">
+          <h2 class="name">Roberta Ivanete Alexandre</h2>
+          <p class="title">Designer</p>
+          <p class="description">Bacharel em adminsitração de Empresas pela Universidade Paulista.</p>
+          <p class="button">
+            <a href="mailto:wellingtonb.santos@hotmail.com" rel="external" target="_blank">Contato</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <footer> <!-- Rodapé -->
+    <p>&copy; 2025 ONG Educar para mudar. Todos os direitos reservados.</p>
+    <a href="#">
+      <img src="asset/img/logo-facebook.jpg" alt="logo-facebook">
+    </a>
+    <a href="#">
+      <img src="asset/img/logo-instagram.jpg" alt="logo-instagram">
+    </a><br>
+    <a href="sobre.html" target="_self" rel="prev">
+      <img src="asset/img/voltar.png" alt="#" style="transform: scaleX(-1);">
+    </a>
+  </footer>
+
+  <script src="asset/js/main.js"></script> <!-- Script menu mobile -->
+  <script src="asset/js/dark.js"></script> <!-- Script dark-mode -->
+  <script src="asset/js/slides.js"></script> <!-- Script slides -->
+  <script src="asset/js/search.js"></script>
+  <script src="asset/js/menu-hamburger.js"></script> <!-- Script menu hamburger -->
+</body>
+</html>
+
+
+

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Documentation — NGO Website</title>
+  <link rel="stylesheet" href="asset/css/style.css" />
+</head>
+<style>
+#language-switcher button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+</style>
+<body>
+  <header>
+    <div id="language-switcher" style="text-align: right; margin: 10px;">
+         <button onclick="switchLanguage()">🌍 Switch Language</button>
+    </div>
+    <h1>📚 Project Documentation — NGO Website</h1>
+    <nav>
+        <ul>
+            <li><a href="#readme">README</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#validation">HTML Validation</a></li>
+            <li><a href="#charts">Charts</a></li>
+            <li><a href="#license">License</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+        <section id="readme">
+            <h2>README</h2>
+            <p>This repository contains the source code and documentation for an institutional website developed for a Non-Governmental Organization (NGO). The goal is to promote transparency, engagement, and facilitate communication with the public.</p>
+
+            <h3>📁 Project Structure</h3>
+            <pre><code>
+            projeto-ong/
+            ├── asset/            # Static files (CSS, JS, images, videos, etc.)
+            ├── docs/             # Technical documentation in Markdown
+            ├── *.html            # Main website pages
+            </code></pre>
+
+            <h3>🧰 Technologies Used</h3>
+            <ul>
+                <li><strong>HTML5</strong> — Semantic page structure</li>
+                <li><strong>CSS3</strong> — Styling and responsive layout</li>
+                <li><strong>Vanilla JavaScript</strong> — Interactivity and form validation</li>
+                <li><strong>Markdown (.md)</strong> — Technical documentation</li>
+                <li><strong>Visual Studio Code</strong> — Recommended code editor</li>
+            </ul>
+
+            <h3>📄 Website Pages</h3>
+            <ul>
+                <li><code>index.html</code> — Homepage</li>
+                <li><code>sobre.html</code> — Institutional information</li>
+                <li><code>projetos.html</code> — Project details</li>
+                <li><code>transparencia.html</code> — Financial transparency</li>
+                <li><code>doacoes.html</code> — Donation options</li>
+                <li><code>voluntariado.html</code> — Volunteer registration</li>
+                <li><code>contato.html</code> — Contact form</li>
+                <li><code>blog.html</code> — News and updates</li>
+            </ul>
+
+            <h3>📚 Documentation</h3>
+            <p>All technical documentation is located in the <code>docs/</code> folder and includes:</p>
+            <ul>
+                <li><code>arquitetura.md</code> — Project architecture</li>
+                <li><code>especificacoes-formularios.md</code> — Form specifications</li>
+                <li><code>graficos.md</code> — Charts and visualizations</li>
+                <li><code>validacao-html.md</code> — HTML validation</li>
+                <li><code>license.md</code> — Usage and distribution terms</li>
+                <li><code>README.md</code> — This overview</li>
+            </ul>
+
+            <h3>🚀 How to Run Locally</h3>
+            <ol>
+                <li>Clone the repository:
+                <pre><code>git clone https://github.com/your-username/projeto-ong.git</code></pre>
+                </li>
+                <li>Open the folder in VS Code:
+                <pre><code>code projeto-ong</code></pre>
+                </li>
+                <li>Double-click <code>index.html</code> or use Live Server to preview in your browser.</li>
+            </ol>
+
+            <h3>🤝 Contributions</h3>
+            <p>Contributions are welcome! Feel free to open issues or submit pull requests with improvements, fixes, or new features.</p>
+
+            <h3>📄 License</h3>
+            <p>This project is licensed under the terms of the <a href="docs/license.md">MIT License</a>.</p>
+
+            <h3>👤 Author</h3>
+            <p>Developed by <strong>Wellington</strong><br />
+            <a href="https://www.linkedin.com/in/seu-perfil">LinkedIn</a> • <a href="https://github.com/seu-usuario">GitHub</a></p>
+        </section>
+
+        <section id="architecture">
+            <h2>Architecture</h2>
+            <p>This section describes the overall architecture of the NGO website project, including folder structure, technologies used, page organization, and development principles.</p>
+
+            <h3>📁 Folder Structure</h3>
+            <pre><code>
+            projeto-ong/
+            ├── asset/
+            │   ├── audio/         # Audio files used on the site
+            │   ├── css/           # Stylesheets
+            │   ├── fonts/         # Custom fonts
+            │   ├── img/           # Images used in pages
+            │   ├── js/            # JavaScript scripts
+            │   └── video/         # Video files
+            ├── docs/              # Technical documentation in Markdown
+            ├── blog.html          # Blog page
+            ├── contato.html       # Contact page
+            ├── doacoes.html       # Donations page
+            ├── index.html         # Homepage
+            ├── projetos.html      # Projects page
+            ├── sobre.html         # About page
+            ├── transparencia.html # Transparency page
+            └── voluntariado.html  # Volunteer page
+            </code></pre>
+
+            <h3>🧪 Technologies Used</h3>
+            <ul>
+                <li><strong>HTML5</strong> — Semantic structure of pages</li>
+                <li><strong>CSS3</strong> — Styling and responsive layout</li>
+                <li><strong>Vanilla JavaScript</strong> — Interactivity and form validation</li>
+                <li><strong>Markdown (.md)</strong> — Technical documentation</li>
+                <li><strong>Visual Studio Code</strong> — Main code editor</li>
+            </ul>
+
+            <h3>🌐 Page Organization</h3>
+            <p>Each HTML page represents a specific section of the website:</p>
+            <ul>
+                <li><code>index.html</code> — Homepage with NGO overview</li>
+                <li><code>sobre.html</code> — Institutional information</li>
+                <li><code>projetos.html</code> — Ongoing project details</li>
+                <li><code>transparencia.html</code> — Financial reports and accountability</li>
+                <li><code>doacoes.html</code> — Ways to contribute</li>
+                <li><code>voluntariado.html</code> — Volunteer registration and info</li>
+                <li><code>contato.html</code> — Contact form</li>
+                <li><code>blog.html</code> — Updates and publications</li>
+            </ul>
+
+            <h3>📱 Responsiveness</h3>
+            <p>The site is designed to be responsive and user-friendly across:</p>
+            <ul>
+                <li>Mobile devices (smartphones and tablets)</li>
+                <li>Modern browsers (Chrome, Firefox, Edge, Safari)</li>
+                <li>Minimum recommended resolution: 360px</li>
+            </ul>
+
+            <h3>🧭 Navigation and Usability</h3>
+            <ul>
+                <li>Persistent main menu across all pages</li>
+                <li>Internal and external links with visual feedback</li>
+                <li>Semantic structure for accessibility (using <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, etc.)</li>
+                <li>Compatible with screen readers</li>
+            </ul>
+
+            <h3>🔒 Best Practices</h3>
+            <ul>
+                <li>Separation of concerns (HTML, CSS, JS in distinct folders)</li>
+                <li>Clear and consistent naming conventions</li>
+                <li>Code comments for clarity</li>
+                <li>HTML validation via W3C tools</li>
+                <li>Optimized fonts and images</li>
+            </ul>
+
+            <h3>📌 Final Notes</h3>
+            <p>The project architecture is designed for easy maintenance, scalability, and collaboration. Its modular structure allows new pages and features to be added with minimal effort.</p>
+        </section>
+
+        <section id="forms">
+            <h2>Forms</h2>
+            <p>This section describes the forms used throughout the NGO website, including their purpose, fields, validations, and best practices.</p>
+
+            <h3>📬 Contact Form</h3>
+            <p><strong>Purpose:</strong> Allow visitors to reach out to the NGO for questions, suggestions, or partnerships.</p>
+            <ul>
+                <li><strong>Fields:</strong> Full name (required), Email (required), Subject (optional), Message (required)</li>
+                <li><strong>Validations:</strong> Valid email format, minimum 20 characters for message, name must not contain numbers</li>
+                <li><strong>Behavior:</strong> Displays success message after submission; may be integrated with email or backend</li>
+            </ul>
+
+            <h3>🤝 Volunteer Form</h3>
+            <p><strong>Purpose:</strong> Register individuals interested in volunteering for NGO projects.</p>
+            <ul>
+                <li><strong>Fields:</strong> Full name (required), Email (required), Phone (optional), Area of interest (required), Availability (required), Additional message (optional)</li>
+                <li><strong>Validations:</strong> Valid email format, phone number with Brazilian mask, required fields must be filled</li>
+                <li><strong>Behavior:</strong> Data may be stored in a database or sent via email; may include consent for data usage (LGPD)</li>
+            </ul>
+
+            <h3>💰 Donation Form</h3>
+            <p><strong>Purpose:</strong> Facilitate donations from visitors.</p>
+            <ul>
+                <li><strong>Fields:</strong> Name (optional), Donation amount (required), Payment method (required), Comment (optional)</li>
+                <li><strong>Validations:</strong> Minimum donation of R$10.00, required selection of payment method (Pix, credit card, boleto)</li>
+                <li><strong>Behavior:</strong> Redirects to payment gateway or displays QR code; may include automatic receipt</li>
+            </ul>
+
+            <h3>✅ Best Practices</h3>
+            <ul>
+                <li>Use of <code>label</code> and <code>placeholder</code> for accessibility</li>
+                <li>Visual feedback for invalid fields</li>
+                <li>Clear and concise error messages</li>
+                <li>Semantic grouping with <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code></li>
+                <li>Mobile-friendly layout</li>
+            </ul>
+
+            <h3>🔐 Privacy Considerations</h3>
+            <p>All forms comply with Brazil's <strong>General Data Protection Law (LGPD)</strong>:</p>
+            <ul>
+                <li>Minimal data collection</li>
+                <li>Explicit consent when required</li>
+                <li>Clear purpose for each data field</li>
+            </ul>
+
+            <h3>📦 Future Integrations (Suggestions)</h3>
+            <ul>
+                <li>Integration with Google Sheets or Airtable for storing responses</li>
+                <li>Automatic confirmation emails</li>
+                <li>Admin dashboard to view submissions</li>
+                </ul>
+        </section>
+
+    <section id="validation">
+            <h2>HTML Validation</h2>
+            <p>This section presents the validation tests performed on the NGO website's HTML pages, focusing on compliance with web standards, accessibility, and development best practices.</p>
+
+            <h3>🧪 Tools Used</h3>
+            <ul>
+                <li><strong>W3C Markup Validation Service</strong> — Official HTML validator: <a href="https://validator.w3.org">validator.w3.org</a></li>
+                <li><strong>Google Lighthouse</strong> — Auditing tool for performance, accessibility, and SEO</li>
+                <li><strong>HTMLHint</strong> — Real-time HTML code linter</li>
+            </ul>
+
+            <h3>📄 Validated Pages</h3>
+            <ul>
+                <li><code>index.html</code></li>
+                <li><code>sobre.html</code></li>
+                <li><code>projetos.html</code></li>
+                <li><code>transparencia.html</code></li>
+                <li><code>doacoes.html</code></li>
+                <li><code>voluntariado.html</code></li>
+                <li><code>contato.html</code></li>
+                <li><code>blog.html</code></li>
+            </ul>
+
+            <h3>🛠️ Issues Fixed</h3>
+            <ul>
+                <li>Unclosed tags (e.g., <code>&lt;img&gt;</code> without <code>/&gt;</code>)</li>
+                <li>Deprecated attributes removed (e.g., <code>align</code>, <code>bgcolor</code>)</li>
+                <li>Missing required attributes (e.g., <code>alt</code> for images)</li>
+                <li>Improved semantic structure (replacing <code>&lt;div&gt;</code> with <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, etc.)</li>
+                <li>Duplicate <code>id</code> values corrected</li>
+            </ul>
+
+            <h3>♿ Accessibility</h3>
+            <ul>
+                <li>Use of <code>aria-label</code> and <code>role</code> for interactive elements</li>
+                <li>Color contrast verified via Lighthouse</li>
+                <li>Keyboard navigation tested manually</li>
+                <li>Proper heading hierarchy (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>)</li>
+            </ul>
+
+            <h3>📈 Lighthouse Audit Results</h3>
+            <table>
+                <tr><th>Metric</th><th>Average Score</th></tr>
+                <tr><td>Performance</td><td>85/100</td></tr>
+                <tr><td>Accessibility</td><td>95/100</td></tr>
+                <tr><td>Best Practices</td><td>100/100</td></tr>
+                <tr><td>SEO</td><td>90/100</td></tr>
+            </table>
+
+            <h3>📌 Future Recommendations</h3>
+            <ul>
+                <li>Implement automated tests with Jest or Cypress</li>
+                <li>Add <code>sitemap.xml</code> and <code>robots.txt</code> files</li>
+                <li>Use accessibility tools like Axe or Wave</li>
+            </ul>
+
+            <h3>✅ Conclusion</h3>
+            <p>All project pages have been successfully validated and comply with HTML5 standards. The site is optimized for accessibility, SEO, and cross-browser compatibility.</p>
+    </section>
+
+        <section id="charts">
+            <h2>Charts</h2>
+            <p>This section describes the charts used in the NGO website, including their purpose, types, data sources, and visual best practices.</p>
+
+            <h3>🎯 Purpose of Charts</h3>
+            <ul>
+                <li>Present data in a visual and accessible way</li>
+                <li>Reinforce the NGO’s commitment to transparency</li>
+                <li>Make complex information easier to understand</li>
+                <li>Engage visitors with dynamic content</li>
+            </ul>
+
+            <h3>📍 Chart Locations</h3>
+            <ul>
+                <li><code>transparencia.html</code> — Displays financial and impact data</li>
+                <li><code>projetos.html</code> — Shows project progress and results</li>
+                <li><code>doacoes.html</code> — Presents donation statistics</li>
+            </ul>
+
+            <h3>📈 Chart Types</h3>
+            <table>
+                <tr><th>Type</th><th>Purpose</th><th>Page</th></tr>
+                <tr><td>Pie</td><td>Expense distribution</td><td>transparencia.html</td></tr>
+                <tr><td>Bar</td><td>Donation comparison by period</td><td>doacoes.html</td></tr>
+                <tr><td>Line</td><td>Project evolution over time</td><td>projetos.html</td></tr>
+            </table>
+
+            <h3>🛠️ Tools Used</h3>
+            <ul>
+                <li><strong>Chart.js</strong> — Lightweight and responsive JavaScript chart library</li>
+                <li><strong>Google Charts</strong> (optional) — Alternative for external data integration</li>
+                <li><strong>Custom CSS</strong> — Styling to match site identity</li>
+            </ul>
+
+            <h3>📊 Data Sources</h3>
+            <ul>
+                <li>Internal NGO reports</li>
+                <li>Financial control spreadsheets</li>
+                <li>Volunteer and donation records</li>
+                <li>Social impact indicators</li>
+            </ul>
+
+            <h3>🎨 Visual Best Practices</h3>
+            <ul>
+                <li>Accessible and contrasting colors</li>
+                <li>Clear legends and labels</li>
+                <li>Descriptive titles for each chart</li>
+                <li>Responsive layout for mobile devices</li>
+                <li>Periodic data updates</li>
+            </ul>
+
+            <h3>🔄 Chart Updates</h3>
+            <p>Charts are updated manually or via spreadsheet integration. Recommended practices:</p>
+            <ul>
+                <li>Monthly data updates</li>
+                <li>Visual review for each new campaign or project</li>
+                <li>Data validation before publishing</li>
+            </ul>
+
+            <h3>📌 Final Notes</h3>
+            <p>Using charts on the NGO website enhances transparency and credibility. It also improves user experience by presenting data in a clear and engaging format.</p>
+        </section>
+
+    <section id="license">
+            <h2>License</h2>
+            <p>This project is licensed under the terms of the <strong>MIT License</strong>, a permissive open-source license that allows reuse with minimal restrictions.</p>
+
+            <h3>📜 MIT License Text</h3>
+            <pre><code>
+            Copyright (c) 2025 Wellington and contributors
+
+            Permission is hereby granted, free of charge, to any person obtaining a copy
+            of this software and associated documentation files (the "Software"), to deal
+            in the Software without restriction, including without limitation the rights
+            to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+            copies of the Software, and to permit persons to whom the Software is
+            furnished to do so, subject to the following conditions:
+
+            The above copyright notice and this permission notice shall be included in all
+            copies or substantial portions of the Software.
+
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+            SOFTWARE.
+            </code></pre>
+
+            <h3>📌 Notes</h3>
+            <ul>
+                <li>This license allows others to use, modify, and distribute the project, including for commercial purposes.</li>
+                <li>Credit to the original author and license notice must be retained.</li>
+                <li>The project is provided <strong>without warranty</strong>, and the author is not liable for any issues arising from its use.</li>
+            </ul>
+
+            <h3>🤝 Contributions</h3>
+            <p>Contributions are welcome! By contributing to this project, you agree that your code will be released under the same MIT License terms.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by Wellington • NGO Website Project</p>
+  </footer>
+
+   <script>
+        function switchLanguage() {
+            const currentPage = window.location.pathname;
+            if (currentPage.includes("documentacao.html")) {
+            window.location.href = "documentation.html";
+            } else {
+            window.location.href = "documentacao.html";
+            }
+        }
+   </script>
+</body>
+</html>

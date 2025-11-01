@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fale com a Educar para mudar - Contato institucional" />
+  <title>Contato | ONG Educar para mudar</title>
+   <link rel="stylesheet" href="asset/css/style.css" />
+  <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container"> <!-- Botão dark-mode-->
+        <div class="sun sun-logo">
+            <i><span class="material-symbols-outlined">sunny</span></i>
+        </div>
+
+        <div class="moon moon-logo">
+            <i><span class="material-symbols-outlined">dark_mode</span></i>
+        </div>
+  </div>
+    
+  <header> <!-- Cabeçalho -->
+    <h1>ONG Educar para mudar</h1>
+      <!-- Ícone do menu hamburger -->
+  <div class="menu-toggle" id="menu-toggle">
+    <!-- &#9776; -->
+     <span></span>
+     <span></span>
+     <span></span>
+  </div>
+    <nav id="navbar"> <!-- Menu de navegação -->     
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="transparencia.html">Transparência</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+
+      <!-- ícone da lupinha para fazer buscas site -->   
+      <div class="search-container">
+        <div class="search-bar" id="searchBar">
+          <input id="searchInput" type="text" placeholder="O que você procura?" onkeydown="checkEnter(event)">
+          <button class="close-btn">&times;</button>
+        </div>
+
+        <div class="search-icon" onclick="buscarEmTempoReal()">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="resultados" class="resultados-container"></div>
+    <section>
+      <h1>Fale Conosco</h1>
+      <p>Entre em contato com nossa equipe para dúvidas, sugestões ou parcerias.</p>
+    </section>
+
+    <section>
+      <h2>Informações de Contato</h2>
+      <ul>
+        <li><strong>Endereço:</strong> Rua da Solidariedade, 123 - São Paulo/SP</li>
+        <li><strong>Telefone:</strong> (11) 967684819</li>
+        <li><strong>E-mail:</strong> contato@ongfakedigital.org.br</li>
+        <li><strong>Horário de atendimento:</strong> Segunda a sexta, das 9h às 17h</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulário de Contato</h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Dados do Remetente</legend>
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="assunto">Assunto:</label>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione</option>
+            <option value="duvida">Dúvida</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="parceria">Parceria</option>
+            <option value="outros">Outros</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mensagem</legend>
+          <label for="mensagem">Escreva sua mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+          <label for="anexo">Anexar arquivo (PDF, imagem ou documento):</label>
+          <input type="file" id="anexo" name="anexo" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" />
+        </fieldset>
+
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
+  </main>
+
+<footer> <!-- Rodapé -->
+    <p>&copy; 2025 ONG Educar para mudar. Todos os direitos reservados.</p>
+    <a href="#">
+      <img src="asset/img/logo-facebook.jpg" alt="logo-facebook">
+    </a>
+    <a href="#">
+      <img src="asset/img/logo-instagram.jpg" alt="logo-instagram">
+    </a><br>
+    <a href="transparencia.html" target="_self" rel="prev">
+      <img src="asset/img/voltar.png" alt="#">
+    </a>
+    <a href="blog.html" target="_self" rel="prev">
+      <img src="asset/img/voltar.png" alt="#" style="transform: scaleX(-1);">
+    </a>
+  </footer>
+
+ <a href="https://api.whatsapp.com/send?phone=5511967684819&text=Ol%C3%A1%20peguei%20seu%20contato%20no%20site" class="whats" target="_blank">
+  <img id="img" src="asset/img/whats.png" alt="logo-whatsapp">
+ </a>
+
+  <script src="assets/js/main.js"></script> <!-- Script menu mobile -->
+  <script src="asset/js/dark.js"></script> <!-- Script dark-mode -->
+  <script src="asset/js/search.js"></script> <!-- Script barra de pesquisa -->
+  <script src="asset/js/menu-hamburger.js"></script> <!-- Script menu hamburger -->
+</body>
+</html>

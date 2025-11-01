@@ -1,0 +1,255 @@
+ul#album-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 50px;
+    padding: 50px;
+    margin: 0;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li {
+    /* border-radius: 20px; */
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px 3px rgba(0,0,0,.4);
+    transition: all .4s ease-in;
+}
+
+ul#album-fotos li:hover span {
+    opacity: 1;
+    /* color: aqua; */
+  }
+
+ul#album-fotos li:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+ }
+
+ /* figcaption.foto{
+    display: block;
+    margin-top: 177px;
+    letter-spacing: -1px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000;
+ } */
+
+ul#album-fotos li#foto1 {
+    background: url('../img/projeto1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto1:hover {
+    /* content: url('#'); */
+    background-position: 0px 0px;
+    background-size: 300px;
+}
+
+ul#album-fotos li#foto2 {
+    background: url('../img/projeto2.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto2:hover {
+    /* content: url('#'); */
+    background-position: 0px 0px;
+    background-size: 280px;
+}
+
+ul#album-fotos li#foto3 {
+    background: url('../img/projeto3.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto3:hover {
+    /* content: url('#'); */
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto4 {
+    background: url('../img/projeto4.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto4:hover {
+    /* content: url('#'); */
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto5 {
+    background: url('../img/projeto5.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto5:hover {
+    /* content: url('#'); */
+    background-position: 0px 0px;
+    background-size: 200px;
+
+}
+
+ul#album-fotos li#foto6 {
+    background: url('../img/projeto6.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto6:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto7 {
+    background: url('../img/projeto7.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto7:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto8 {
+    background: url('../img/projeto8.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto8:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto9 {
+    background: url('../img/projeto9.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto9:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto10 {
+    background: url('../img/projeto10.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto10:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto10:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto11 {
+    background: url('../img/projeto11.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto11:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto12 {
+    background: url('../img/projeto12.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto12:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto13 {
+    background: url('#') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto13:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto14 {
+    background: url('#') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto14:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li#foto15 {
+    background: url('#') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto15:hover {
+    background-position: 0px 0px;
+    background-size: 200px;
+}
+
+ul#album-fotos li span {
+   opacity: 0;
+   color: #ffffff;
+   text-shadow: 1px 1px 1px #000000;
+   background-color: rgba(0,0,0,.3);
+   font-size: 9pt;
+   line-height: 370px;
+   padding: 5px;
+}
