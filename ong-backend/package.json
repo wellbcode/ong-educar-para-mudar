@@ -12,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "mercadopago": "^2.10.0",
     "node-fetch": "^2.7.0"
   }
 }

@@ -12,6 +12,141 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
+<style>
+  /* Estilos exclusivos para o main da página sobre.html */
+/* Estilo geral do main */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+  background: #fdfdfd;
+}
+
+/* Títulos */
+main .titulo {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Seções */
+main section {
+  margin-bottom: 2rem;
+}
+
+/* Valores em cards */
+main section ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+main section ul li {
+  background: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+main section ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+main section ul li strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #2980b9;
+  margin-bottom: 0.5rem;
+}
+
+/* Artigos (Histórico e Equipe) */
+main article {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 4px solid #2980b9;
+  background: #eef6ff;
+  border-radius: 4px;
+}
+
+/* Timeline container */
+main section:nth-of-type(4) { /* pega a seção Histórico e Conquistas */
+  position: relative;
+  padding-left: 2rem;
+  border-left: 3px solid #2980b9;
+}
+
+/* Cada evento da timeline */
+main section:nth-of-type(4) article {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+main section:nth-of-type(4) article::before {
+  content: "";
+  position: absolute;
+  left: -1.1rem;
+  top: 0.5rem;
+  width: 15px;
+  height: 15px;
+  background: #2980b9;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* Títulos dos eventos */
+main section:nth-of-type(4) article h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+/* Lista de conquistas */
+main section:nth-of-type(4) ul {
+  list-style: none;
+  padding: 0;
+}
+
+main section:nth-of-type(4) ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #ccc;
+}
+
+/* Equipe em cards */
+main section:nth-of-type(5) ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+main section:nth-of-type(5) ul li {
+  flex: 1 1 250px;
+  background: #f9f9f9;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+main section:nth-of-type(5) ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+main section:nth-of-type(6) ul li::before {
+  content: "👤 ";
+  font-size: 1.2rem;
+}
+
+</style>
 <body>
   <div class="container"> <!-- Botão dark-mode-->
         <div class="sun sun-logo">
@@ -75,37 +210,51 @@
       <p>Ser referência nacional em inovação social e mobilização comunitária até 2030.</p>
     </section>
 
-    <section>
-      <h2 class="titulo">Valores</h2>
-      <ul>
-        <li>Transparência</li>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore ex odio sint modi! Odit, unde. A, aut repellendus. Quam vitae, quae aperiam sequi esse veritatis quidem totam voluptate labore!</p>
-        <li>Empatia</li>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore ex odio sint modi! Odit, unde. A, aut repellendus. Quam vitae, quae aperiam sequi esse veritatis quidem totam voluptate labore!</p>
-        <li>Comprometimento</li>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore ex odio sint modi! Odit, unde. A, aut repellendus. Quam vitae, quae aperiam sequi esse veritatis quidem totam voluptate labore!</p>
-        <li>Inovação</li>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore ex odio sint modi! Odit, unde. A, aut repellendus. Quam vitae, quae aperiam sequi esse veritatis quidem totam voluptate labore!</p>
-        <li>Respeito à diversidade</li>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita reiciendis iusto quibusdam enim porro explicabo alias saepe quaerat, natus, odit, voluptate laudantium? Minus voluptatem voluptatum doloribus fugit nam facilis laboriosam.</p>
-      </ul>
-    </section>
+  <section>
+    <h2 class="titulo">Valores</h2>
+    <ul>
+      <li>
+        <strong>Transparência</strong>
+        <p>Agimos com clareza e responsabilidade em todas as nossas ações.</p>
+      </li>
+      <li>
+        <strong>Empatia</strong>
+        <p>Colocamos as necessidades das pessoas em primeiro lugar.</p>
+      </li>
+      <li>
+        <strong>Comprometimento</strong>
+        <p>Estamos dedicados a transformar vidas por meio da educação.</p>
+      </li>
+      <li>
+        <strong>Inovação</strong>
+        <p>Buscamos soluções criativas e sustentáveis para desafios sociais.</p>
+      </li>
+      <li>
+        <strong>Respeito à diversidade</strong>
+        <p>Valorizamos todas as culturas, identidades e formas de expressão.</p>
+      </li>
+        <li>
+        <strong>Responsabilidade</strong>
+        <p>Valorizamos todas as culturas, identidades e formas de expressão.</p>
+      </li>
+    </ul>
+  </section>
 
-    <section>
-      <h2 class="titulo">Histórico e Conquistas</h2>
-      <article>
-        <h3 class="titulo">Fundação</h3>
-        <p>A O Educar para mudar foi fundada em 2023 por um grupo de amigos.</p>
-      </article>
-      <article>
-        <h3 class="titulo">Principais Conquistas</h3>
-        <ul>
-          <li>Mais de 10 mil pessoas impactadas diretamente</li>
-          <li>Prêmio Nacional de Inovação Social (2020)</li>
-          <li>Parcerias com 50+ instituições públicas e privadas</li>
-        </ul>
-      </article>
-    </section>
+  <section>
+    <h2 class="titulo">Histórico e Conquistas</h2>
+    <article>
+      <h3 class="titulo">Fundação</h3>
+      <p>A O Educar para mudar foi fundada em 2023 por um grupo de amigos.</p>
+    </article>
+    <article>
+      <h3 class="titulo">Principais Conquistas</h3>
+      <ul>
+        <li>Mais de 10 mil pessoas impactadas diretamente</li>
+        <li>Prêmio Nacional de Inovação Social (2020)</li>
+        <li>Parcerias com 50+ instituições públicas e privadas</li>
+      </ul>
+    </article>
+  </section>
 
     <section>
       <h2 class="titulo">Equipe e Estrutura Organizacional</h2>
@@ -113,9 +262,9 @@
         <h3 class="titulo">Diretoria</h3>
         <p>Conheça os líderes que coordenam nossas ações estratégicas.</p>
         <ul>
-          <li>Presidente: Wellington Bertoso Santos</li>
-          <li>Diretora Executiva: Sabrina Evangelista</li>
-          <li>Coordenadora de Projetos: Mayra da Silva Gal</li>
+          <li><p>Wellington Bertoso Santos</p><p>Presidente</p></li>
+          <li><p>Mayra da Silva Gal</p><p>Diretora Pedagógica</p></li>
+          <li><p>Roberta Ivanete Alexandre/p><p>Designer</p></li>
         </ul>
       </article>
       <article>

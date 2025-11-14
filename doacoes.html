@@ -197,10 +197,10 @@
       <img src="asset/img/logo-instagram.jpg" alt="logo-instagram">
     </a><br>
     <a href="voluntariado.html" target="_self" rel="prev">
-      <img src="asset/img/voltar.png" alt="#">
+      <img class="seta" src="asset/img/voltar.png" alt="#">
     </a>
     <a href="transparencia.html" target="_self" rel="prev">
-      <img src="asset/img/voltar.png" alt="botão de voltar">
+      <img  src="asset/img/voltar.png" alt="botão de voltar">
     </a>
   </footer>
 
@@ -210,7 +210,7 @@
   <script src="asset/js/menu-hamburger.js"></script> <!-- Script menu hamburger -->
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 
-<script>
+<!-- <script>
   document.getElementById('botao-doar').addEventListener('click', async function () {
     const nome = document.getElementById('nome').value;
     const valor = parseFloat(document.getElementById('valor').value);
@@ -251,7 +251,60 @@
       console.error(erro);
     }
   });
-</script>
+</script> -->
 
+  <script>
+    document.getElementById('botao-doar').addEventListener('click', async function () {
+      const nome = document.getElementById('nome').value;
+      const valor = parseFloat(document.getElementById('valor').value);
+      const mensagem = document.getElementById('mensagem').value;
+      const botao = document.getElementById('botao-doar');
+
+      // ✅ Validação dos campos
+      if (!nome) {
+        alert('Por favor, informe seu nome.');
+        return;
+      }
+      if (isNaN(valor) || valor < 50) {
+        alert('O valor mínimo para doação é R$50.');
+        return;
+      }
+
+      // ✅ Salvar dados no localStorage
+      localStorage.setItem('nomeDoador', nome);
+      localStorage.setItem('valorDoacao', valor);
+      localStorage.setItem('mensagemApoio', mensagem);
+
+      try {
+        // ✅ Feedback visual
+        botao.disabled = true;
+        botao.textContent = "Processando...";
+
+        // ✅ Enviar valor para o backend
+        const resposta = await fetch('http://localhost:3000/criar-preferencia', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ valor })
+        });
+
+        const dados = await resposta.json();
+
+        // ✅ Redirecionar para o checkout
+        if (dados.init_point) {
+          window.location.href = dados.init_point;
+        } else {
+          alert('Erro ao criar a preferência. Tente novamente.');
+          console.warn("⚠️ Erro ao criar preferência no MP:", dados);
+        }
+      } catch (erro) {
+        alert('Erro de conexão com o servidor. Verifique se o backend está rodando.');
+        console.error(erro);
+      } finally {
+        // ✅ Reativar botão
+        botao.disabled = false;
+        botao.textContent = "Doar";
+      }
+    });
+  </script>
 </body>
 </html>
