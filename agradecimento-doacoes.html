@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Obrigado pela sua doação!</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f8fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main.agradecimento {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 500px;
+}
+
+main.agradecimento h1 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+main.agradecimento p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+main.agradecimento a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+main.agradecimento a:hover {
+  background-color: #1565c0;
+}
+</style>
+<body>
+   <main class="agradecimento">
+        <h1>🎉 Doação realizada com sucesso!</h1>
+        <p>Obrigado por apoiar nossos projetos sociais. Sua contribuição faz a diferença!</p>
+        <div id="resumo-doacao"></div>
+        <a href="index.html">Voltar para a página inicial</a>
+   </main>
+
+    <!-- <script>
+        const nome = localStorage.getItem('nomeDoador');
+        const valor = localStorage.getItem('valorDoacao');
+        const mensagem = localStorage.getItem('mensagemApoio');
+
+      document.getElementById('resumo-doacao').innerHTML = `
+        <p><strong>Nome:</strong> ${nome}</p>
+        <p><strong>Valor doado:</strong> R$ ${valor}</p>
+        ${mensagem ? `<p><strong>Mensagem de apoio:</strong> ${mensagem}</p>` : ''}
+     `;
+    </script> -->
+
+    <p>Obrigado, <strong id="nomeDoador"></strong>!</p>
+    <p>Você doou <strong id="valorDoacao"></strong> reais.</p>
+    <p>Sua mensagem: <em id="mensagemApoio"></em></p>
+
+    <script>
+        document.getElementById('nomeDoador').textContent = localStorage.getItem('nomeDoador');
+        document.getElementById('valorDoacao').textContent = localStorage.getItem('valorDoacao');
+        document.getElementById('mensagemApoio').textContent = localStorage.getItem('mensagemApoio');
+    </script>
+
+</body>
+</html>

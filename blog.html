@@ -12,6 +12,113 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
+<style>
+  main {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.newsletter-form {
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  max-width: 400px;
+}
+
+.newsletter-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.newsletter-form input[type="email"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form fieldset {
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form fieldset {
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.newsletter-form input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #0077cc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.newsletter-form input[type="checkbox"]:checked {
+  background-color: #0077cc;
+  border-color: #0077cc;
+}
+
+.newsletter-form input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.newsletter-form button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #005fa3;
+}
+
+.imprensa ul{
+  list-style: none;
+}
+
+</style>
 <body>
   <div class="container"> <!-- Botão dark-mode-->
         <div class="sun sun-logo">
@@ -58,61 +165,71 @@
     </nav>
   </header>
 
-  <main>
-    <div id="resultados" class="resultados-container"></div>
-    <section>
-      <h1 class="texto">Blog e Notícias</h1>
-      <p>Acompanhe as últimas atualizações, eventos e conquistas da ONG Educar para mudar.</p>
-    </section>
+ <main>
+  <div id="resultados" class="resultados-container"></div>
 
-    <section>
-      <h2 class="texto">Últimas Publicações</h2>
+  <section class="blog-intro">
+    <h1>📰 Blog e Notícias</h1>
+    <p>Acompanhe as últimas atualizações, eventos e conquistas da ONG <strong>Educar para mudar</strong>.</p>
+  </section>
 
-      <article>
-        <h3 class="texto">ONG Educar para mudar lança projeto de alfabetização digital</h3>
-        <p><strong>Data:</strong> 15 de setembro de 2025</p>
-        <p>O novo projeto visa capacitar jovens e adultos em habilidades digitais essenciais para o mercado de trabalho.</p>
-        <a href="#">Leia mais</a>
-      </article>
+  <section class="publicacoes">
+    <h2>📌 Últimas Publicações</h2>
 
-      <article>
-        <h3 class="texto">Campanha de arrecadação supera meta em tempo recorde</h3>
-        <p><strong>Data:</strong> 05 de Outubro de 2025</p>
-        <p>Com apoio da comunidade, arrecadamos R$ 50 mil em apenas 10 dias para o projeto Saúde na Comunidade.</p>
-        <a href="#">Leia mais</a>
-      </article>
-    </section>
+    <article>
+      <h3>📘 ONG Educar para mudar lança projeto de alfabetização digital</h3>
+      <p><strong>Data:</strong> 15 de setembro de 2025</p>
+      <p>O novo projeto visa capacitar jovens e adultos em habilidades digitais essenciais para o mercado de trabalho.</p>
+      <a href="#">Leia mais</a>
+    </article>
 
-    <section>
-      <h2 class="texto">Newsletter</h2>
-      <form action="#" method="post">
-        <label for="email">Cadastre seu e-mail para receber novidades:</label>
-        <input type="email" id="email" name="email" required />
+    <article>
+      <h3>💰 Campanha de arrecadação supera meta em tempo recorde</h3>
+      <p><strong>Data:</strong> 05 de outubro de 2025</p>
+      <p>Com apoio da comunidade, arrecadamos <strong>R$ 50 mil</strong> em apenas 10 dias para o projeto <em>Saúde na Comunidade</em>.</p>
+      <a href="#">Leia mais</a>
+    </article>
+  </section>
 
-        <label for="preferencias">Selecione os temas de interesse:</label>
-        <div>
-          <input type="checkbox" id="educacao" name="preferencias" value="educacao" />
-          <label for="educacao">Educação</label>
+  <!-- Sessão do formulário -->
+  <section class="newsletter">
+    <h2>📬 Newsletter</h2>
+    <p>Cadastre seu e-mail para receber novidades e atualizações sobre nossos projetos.</p>
 
-          <input type="checkbox" id="saude" name="preferencias" value="saude" />
-          <label for="saude">Saúde</label>
+    <form class="newsletter-form" action="https://formspree.io/f/xeopdezq" method="post" aria-labelledby="titulo-newsletter" aria-describedby="mensagem-sucesso">
+        <label for="email-news">Seu e-mail:</label>
+        <input type="email" id="email-news" name="email" required placeholder="Digite seu e-mail" aria-required="true" />
 
-          <input type="checkbox" id="meioambiente" name="preferencias" value="meioambiente" />
-          <label for="meioambiente">Meio Ambiente</label>
-        </div>
+      <fieldset role="group" aria-labelledby="temas-interesse">
+        <legend id="temas-interesse">Temas de interesse:</legend>
+        <label><input type="checkbox" name="preferencias" value="educacao" /> Educação</label>
+        <label><input type="checkbox" name="preferencias" value="saude" /> Saúde</label>
+        <label><input type="checkbox" name="preferencias" value="meioambiente" /> Meio Ambiente</label>
+      </fieldset>
 
-        <button type="submit">Assinar Newsletter</button>
-      </form>
-    </section>
+      <button type="submit" aria-label="Assinar newsletter">Assinar Newsletter</button>
+      <input type="hidden" role="uploadcare-uploader" name="arquivo" />
+      <p id="mensagem-sucesso" style="display:none;" aria-live="polite">Mensagem enviada com sucesso!</p>
+    </form>
 
-    <section>
-      <h2 class="texto">Área de Imprensa</h2>
-      <ul>
-        <li><a href="assets/docs/release-projeto-digital.pdf" target="_blank">Release: Projeto de Alfabetização Digital</a></li>
-        <li><a href="assets/docs/release-campanha-saude.pdf" target="_blank">Release: Campanha Saúde na Comunidade</a></li>
-      </ul>
-    </section>
-  </main>
+   <!-- formulário HTML puro, para teste: 
+    <form  action="https://formspree.io/f/xldozrgz" method="POST">
+      <input type="text" name="nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="message" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>-->
+  </section>
+
+  <!-- Sessão de imprensa -->
+  <section class="imprensa">
+    <h2>🗞️ Área de Imprensa</h2>
+    <ul>
+      <li><a href="assets/docs/release-projeto-digital.pdf" target="_blank">📄 Release: Projeto de Alfabetização Digital</a></li>
+      <li><a href="assets/docs/release-campanha-saude.pdf" target="_blank">📄 Release: Campanha Saúde na Comunidade</a></li>
+    </ul>
+  </section>
+</main>
 
 <footer> <!-- Rodapé -->
     <p>&copy; 2025 ONG Educar para mudar. Todos os direitos reservados.</p>
@@ -130,9 +247,43 @@
     </a>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="asset/js/main.js"></script>
   <script src="asset/js/dark.js"></script> <!-- Script dark-mode -->
   <script src="asset/js/search.js"></script>
   <script src="asset/js/menu-hamburger.js"></script> <!-- Script menu hamburger -->
-</body>
+
+<script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(() => {
+      const msg = document.getElementById("mensagem-sucesso");
+      msg.style.display = "block";
+      msg.setAttribute("tabindex", "-1");
+      msg.focus();
+      msg.scrollIntoView({ behavior: "smooth" });
+
+      setTimeout(() => {
+        window.location.href = "agradecimento.html";
+      }, 2000);
+    }).catch(() => {
+      alert("Erro ao enviar. Tente novamente.");
+    });
+  });
+</script>
+
+ <script>
+    UPLOADCARE_PUBLIC_KEY = 'd590fccfde2093745b1c'; // 
+  </script>
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+ </body>
 </html>

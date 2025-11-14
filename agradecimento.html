@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Obrigado!</title>
+  <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<style>
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark-mode {
+  background-color: #121212;
+}
+
+body.dark-mode .pagina-obrigado {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .pagina-obrigado a {
+  background-color: #3399ff;
+}
+
+body.dark-mode .pagina-obrigado a:hover {
+  background-color: #1a75d1;
+}
+
+main.pagina-obrigado {
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+/*.icone-sucesso {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #28a745;  verde sucesso 
+}*/
+
+.material-symbols-outlined.icone-sucesso {
+  font-size: 4rem;
+  color: #28a745;
+  margin-bottom: 1rem;
+  animation: pulse 1s ease-in-out;
+}
+
+
+main.pagina-obrigado h1 {
+  font-size: 2rem;
+  color: #0055aa;
+  margin-bottom: 1rem;
+}
+
+main.pagina-obrigado p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+main.pagina-obrigado a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #0055aa;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+main.pagina-obrigado a:hover {
+  background-color: #003f7f;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+</style>
+<body>
+   <div class="container"> <!-- Botão dark-mode-->
+      <div class="sun sun-logo">
+          <i><span class="material-symbols-outlined">sunny</span></i>
+      </div>
+      <div class="moon moon-logo">
+          <i><span class="material-symbols-outlined">dark_mode</span></i>
+     </div>
+   </div>    
+  
+  <main class="pagina-obrigado">
+    <!-- <div class="icone-sucesso">✅</div>   -->
+    <div class="icone-sucesso">
+      <span class="material-symbols-outlined icone-sucesso">check_circle</span>
+    </div>  
+    <h1>Mensagem enviada com sucesso!</h1>
+    <p>Obrigado por entrar em contato. Retornaremos em breve.</p>
+    <a href="index.html">Voltar para o início</a>
+  </main>
+
+   <a href="https://api.whatsapp.com/send?phone=5511967684819&text=Ol%C3%A1%20peguei%20seu%20contato%20no%20site" class="whats" target="_blank" rel="external">
+  <!-- <img id="img" src="asset/img/whatsapp.png" alt="logo-whatsapp"> -->
+  <i class="fa-brands fa-whatsapp"></i>
+ </a>
+
+<script src="asset/js/dark.js"></script> 
+</body>
+</html>

@@ -28,9 +28,36 @@
 body { 
   font-family: var(--font-family);
   line-height: 1.6;
-  background-color: var(--seven-color);
-  transition: background-color 1s;
-  color: var(--eight-collor);
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #222222;
+}
+
+/* Modo escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode form {
+  background-color: #1e1e1e;
+  color: #f0f0f0 ;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+body.dark-mode button[type="submit"] {
+  background-color: #3399ff;
+}
+
+body.dark-mode button[type="submit"]:hover {
+  background-color: #1a75d1;
 }
 
 /* Dark Mode */
@@ -49,18 +76,18 @@ body {
 }
 
 .dark{
-    background-color: black;
-    color: white;
+  background-color: #121212;
+  color: #f0f0f0;
 }
 
  .sun, .moon{
-    font-size: 10rem;
-    width: fit-content;
-    height: fit-content;
+  font-size: 10rem;
+  width: fit-content;
+  height: fit-content;
 }
 
 .sun, .moon:hover{
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .moon{
@@ -69,20 +96,22 @@ body {
 }
 
 .moon-logo{
-    opacity: 0;
-    transform: translateY(20%) rotateZ(50deg);
-    transition: all 1s ease-out;
+  color: #FFFF99;
+  opacity: 0;
+  transform: translateY(20%) rotateZ(50deg);
+  transition: all 1s ease-out;
 }
 
 .sun-logo{
-    opacity: 1;
-    transform: translateY(0) rotateZ(0deg);
-    transition: all 1s ease-out;
+  color: #FFD700;
+  opacity: 1;
+  transform: translateY(0) rotateZ(0deg);
+  transition: all 1s ease-out;
 }
 
 .animate-sun{
-    opacity: 0;
-    transform: translateY(20%) rotateZ(100deg);
+  opacity: 0;
+  transform: translateY(20%) rotateZ(100deg);
 }
 
 .animate-moon{
@@ -91,11 +120,108 @@ body {
 }
 
 .animate-moon path{
-  fill: white;
+  fill: #FFFF99 !important; /* amarelo claro */
 }
 
 .animate-sun path{
-  fill: white;
+  fill:#FFD700 !important; /* amarelo ouro */
+}
+
+.form-h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0055aa;
+}
+
+/* Formulário */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #0055aa;
+  background-color: #eef6ff;
+}
+
+/* Botão */
+button[type="submit"] {
+  background-color: #0055aa;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #003f7f;
+}
+
+/* Mensagem de sucesso */
+#mensagem-sucesso {
+  color: green;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0055aa;
+  color: #fff;
+}
+
+footer a img {
+  width: 32px;
+  margin: 0 5px;
+}
+
+/* WhatsApp flutuante */
+.whats {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.whats img {
+  width: 50px;
 }
 
 /* Estilização do site */
@@ -302,6 +428,35 @@ nav {
   font-size: 0.9em;
 }
 
+.boas-vindas {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.impacto {
+  background-color: #f5f5f5;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.impacto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.impacto ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.impacto li {
+  margin-bottom: 10px;
+}
+
+
 .card-img {
   max-width: 100px;
   margin: 10px 5px 0 0;
@@ -454,6 +609,14 @@ main {
   right: 10px;
 }
 
+.slide-text {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 50px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.67);
+}
+
+
 /* Texto da legenda (opcional) */
 .text {
   color: #f2f2f2;
@@ -475,6 +638,10 @@ main {
 }
 
 /* Dots (indicadores) */
+.round{
+  text-align:center
+}
+
 .dot {
   cursor: pointer;
   height: 12px;
@@ -501,14 +668,51 @@ main {
   z-index: 5;
 }
 
-.titulo{
+/* .titulo{
   background-image: linear-gradient(to right, 
   var(--two-color), transparent);
-  text-align: justify;
+  text-align:center;
   margin: 50px;
   font-size: 1.2em;
   line-height: 1.8;
+} */
+
+.titulo {
+  font-size: 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #00bfa5, #ffffff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
+
+.titulo + p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
 
 /*Secão da equipe, 3 colunas lado a lado*/
 .row{
@@ -568,7 +772,6 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-
 /* Efeito hover: imagem sobe e texto aparece */
 .card:hover img {
   transform: translateY(-100%);
@@ -604,6 +807,64 @@ main {
   content: "";
   clear: both;
   display: table;
+}
+
+.b-form {
+  background-color: #0055aa;
+  color: #ffffff;
+}
+
+/*animação do formulário*/
+#mensagem-sucesso {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+#mensagem-sucesso.visivel {
+  display: block;
+  opacity: 1;
+}
+#mensagem-sucesso.fade-out {
+  opacity: 0;
+}
+
+.contato {
+  background-color: #fdfdfd;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.contato h2, .contato h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.contato p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.info-contato ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.info-contato li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.info-contato a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.info-contato a:hover {
+  text-decoration: underline;
 }
 
 .button a {
@@ -662,10 +923,20 @@ footer img:hover{
     width: 100px;
 }
 
-.whats {
-    position: fixed;
-    bottom: 2px;
-    right: 5px;
+.seta{
+  transform: scaleX(-1);
+}
+
+.whats i {
+  position: fixed;
+  font-size: 100px;
+  color: green;
+  bottom: 2px;
+  right: 5px;
+}
+
+body.dark-mode .whats {
+  background-color: #202020; /* fundo escuro no modo dark */
 }
 
 @media screen and (max-width: 900px) {

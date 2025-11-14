@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Fale com a Educar para mudar - Contato institucional" />
   <title>Contato | ONG Educar para mudar</title>
-   <link rel="stylesheet" href="asset/css/style.css" />
+  <link rel="stylesheet" href="asset/css/style.css"/>
   <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -14,13 +14,12 @@
 </head>
 <body>
   <div class="container"> <!-- Botão dark-mode-->
-        <div class="sun sun-logo">
-            <i><span class="material-symbols-outlined">sunny</span></i>
-        </div>
-
-        <div class="moon moon-logo">
-            <i><span class="material-symbols-outlined">dark_mode</span></i>
-        </div>
+    <div class="sun sun-logo">
+      <i><span class="material-symbols-outlined">sunny</span></i>
+    </div>
+    <div class="moon moon-logo">
+      <i><span class="material-symbols-outlined">dark_mode</span></i>
+    </div>
   </div>
     
   <header> <!-- Cabeçalho -->
@@ -59,54 +58,73 @@
   </header>
 
   <main>
-    <div id="resultados" class="resultados-container"></div>
-    <section>
-      <h1>Fale Conosco</h1>
-      <p>Entre em contato com nossa equipe para dúvidas, sugestões ou parcerias.</p>
-    </section>
+  <div id="resultados" class="resultados-container"></div>
+<section class="contato">
+  <h2>📞 Fale Conosco</h2>
+  <p>Estamos aqui para ajudar! Entre em contato com nossa equipe para dúvidas, sugestões ou propostas de parceria.</p>
 
-    <section>
-      <h2>Informações de Contato</h2>
-      <ul>
-        <li><strong>Endereço:</strong> Rua da Solidariedade, 123 - São Paulo/SP</li>
-        <li><strong>Telefone:</strong> (11) 967684819</li>
-        <li><strong>E-mail:</strong> contato@ongfakedigital.org.br</li>
-        <li><strong>Horário de atendimento:</strong> Segunda a sexta, das 9h às 17h</li>
-      </ul>
-    </section>
+ <div class="info-contato">
+    <h3>📍 Informações de Contato</h3>
+    <ul>
+      <li><strong>Endereço:</strong> Rua da Solidariedade, 123 – São Paulo/SP</li>
+      <li><strong>Telefone:</strong> <a href="tel:+5511967684819">(11) 96768-4819</a></li>
+      <li><strong>E-mail:</strong> <a href="mailto:contato@ongfakedigital.org.br">contato@ongfakedigital.org.br</a></li>
+      <li><strong>Horário de atendimento:</strong> Segunda a sexta, das 9h às 17h</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Formulário de Contato</h2>
-      <form action="#" method="post" enctype="multipart/form-data">
-        <fieldset>
-          <legend>Dados do Remetente</legend>
-          <label for="nome">Nome completo:</label>
-          <input type="text" id="nome" name="nome" required />
+  <h3>📝 Formulário de Contato</h3>
+  <p>Preencha o formulário abaixo e nossa equipe retornará o mais breve possível.</p>
+</section>
 
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required />
+  <section>
+      <!-- <form action="https://formspree.io/f/xeopdezq" method="POST" enctype="multipart/form-data" role="form" aria-describedby="mensagem-sucesso"> -->
+      <form action="https://formspree.io/f/xldozrgz" method="POST" enctype="multipart/form-data" role="form" aria-describedby="mensagem-sucesso">
+    <fieldset>
+      <legend>Dados do Remetente:</legend>
 
-          <label for="assunto">Assunto:</label>
-          <select id="assunto" name="assunto" required>
-            <option value="">Selecione</option>
-            <option value="duvida">Dúvida</option>
-            <option value="sugestao">Sugestão</option>
-            <option value="parceria">Parceria</option>
-            <option value="outros">Outros</option>
-          </select>
-        </fieldset>
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" />
 
-        <fieldset>
-          <legend>Mensagem</legend>
-          <label for="mensagem">Escreva sua mensagem:</label>
-          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required placeholder="Digite seu e-mail" />
 
-          <label for="anexo">Anexar arquivo (PDF, imagem ou documento):</label>
-          <input type="file" id="anexo" name="anexo" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" />
-        </fieldset>
+      <label for="assunto">Assunto:</label>
+      <select id="assunto" name="assunto" required>
+        <option value="">Selecione</option>
+        <option value="duvida">Dúvida</option>
+        <option value="sugestao">Sugestão</option>
+        <option value="parceria">Parceria</option>
+        <option value="outros">Outros</option>
+      </select>
+    </fieldset>
 
-        <button type="submit">Enviar Mensagem</button>
-      </form>
+    <fieldset>
+      <legend>Mensagem</legend>
+
+      <label for="mensagem">Escreva sua mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <label for="arquivo">Anexar arquivo:</label>
+      <input type="hidden"
+            role="uploadcare-uploader"
+            name="arquivo"
+            data-clearable
+            data-tabs="file url"
+            data-multiple="false"
+            accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" />
+    </fieldset>
+
+    <button type="submit">Enviar Mensagem</button>
+    <p id="mensagem-sucesso" style="display:none;">Mensagem enviada com sucesso!</p>
+  </form> 
+
+      <!-- Teste! -->
+      <!-- <form action="https://formspree.io/f/xldozrgz" method="POST">
+        <input type="text" name="nome" required>
+        <input type="email" name="email" required>
+        <button type="submit">Enviar</button>
+      </form> -->
     </section>
   </main>
 
@@ -127,12 +145,48 @@
   </footer>
 
  <a href="https://api.whatsapp.com/send?phone=5511967684819&text=Ol%C3%A1%20peguei%20seu%20contato%20no%20site" class="whats" target="_blank">
-  <img id="img" src="asset/img/whats.png" alt="logo-whatsapp">
+  <!-- <img id="img" src="asset/img/whatsapp.png" alt="logo-whatsapp"> -->
+  <i class="fa-brands fa-whatsapp"></i>
  </a>
 
-  <script src="assets/js/main.js"></script> <!-- Script menu mobile -->
+  <script src="asset/js/main.js"></script> <!-- Script menu mobile -->
   <script src="asset/js/dark.js"></script> <!-- Script dark-mode -->
   <script src="asset/js/search.js"></script> <!-- Script barra de pesquisa -->
   <script src="asset/js/menu-hamburger.js"></script> <!-- Script menu hamburger -->
+  
+  
+<script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(() => {
+      const msg = document.getElementById("mensagem-sucesso");
+      msg.style.display = "block";
+      msg.setAttribute("tabindex", "-1");
+      msg.focus();
+      msg.scrollIntoView({ behavior: "smooth" });
+
+      setTimeout(() => {
+        window.location.href = "agradecimento.html";
+      }, 2000);
+    }).catch(() => {
+      alert("Erro ao enviar. Tente novamente.");
+    });
+  });
+</script>
+
+  <script>
+    UPLOADCARE_PUBLIC_KEY = 'd590fccfde2093745b1c'; // 
+  </script>
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
 </body>
 </html>

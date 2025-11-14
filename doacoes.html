@@ -3,17 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Campanhas de arrecadação e doações online - ONG Fake digital" />
+  <meta name="description" content="Campanhas de arrecadação e doações online - ONG Educar para mudar" />
+  <meta name="description" content="ONG Educar para mudar - Transformando vidas através da ação social.">
+  <meta name="keywords" content="ONG, educação, voluntariado, doações, projetos sociais">
   <title>Doações | ONG Educar para mudar</title>
   <link rel="stylesheet" href="asset/css/style.css" />
   <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
+<style>
+  img{
+  transform: scaleX(-1);
+  }
+</style>
 <body>
-   <header> <!-- Cabeçalho -->
+  <div class="container"> <!-- Botão dark-mode-->
+        <div class="sun sun-logo">
+            <i><span class="material-symbols-outlined">sunny</span></i>
+        </div>
+
+        <div class="moon moon-logo">
+            <i><span class="material-symbols-outlined">dark_mode</span></i>
+        </div>
+  </div>
+
+  <header> <!-- Cabeçalho -->
     <h1>ONG Educar para mudar</h1>
       <!-- Ícone do menu hamburger -->
   <div class="menu-toggle" id="menu-toggle">
@@ -48,7 +65,7 @@
     </nav>
   </header>
     
-  <main>
+  <!-- <main>
     <div id="resultados" class="resultados-container"></div>
     <section>
       <h1 class="titulo">Campanhas de Arrecadação</h1>
@@ -102,6 +119,73 @@
       <h2 class="titulo">Prestação de Contas</h2>
       <p>Todos os recursos arrecadados são destinados diretamente aos nossos projetos. Acesse os relatórios na página de <a href="transparencia.html">transparência</a>.</p>
     </section>
+  </main> -->
+
+  <main>
+  <div id="resultados" class="resultados-container" aria-live="polite"></div>
+
+  <!-- Introdução -->
+  <section aria-labelledby="titulo-campanha">
+    <h1 id="titulo-campanha" class="titulo">Campanhas de Arrecadação</h1>
+    <p>Contribua com nossos projetos sociais e ajude a transformar vidas. Sua doação faz a diferença!</p>
+  </section>
+
+  <!-- Formulário de Doação -->
+  <section aria-labelledby="titulo-doacao">
+    <h2 id="titulo-doacao" class="titulo">Doação Online</h2>
+    <form action="javascript:void(0)" method="POST" aria-describedby="info-doacao">
+      <p id="info-doacao">Preencha os dados abaixo para realizar sua contribuição. O valor mínimo é R$50.</p>
+
+      <fieldset>
+        <legend>Dados do Doador</legend>
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações da Doação</legend>
+        <label for="valor">Valor da doação (mínimo à partir de R$50):</label>
+        <input type="number" id="valor" name="valor" min="50" step="5" required />
+
+        <label for="forma">Forma de pagamento:</label>
+        <select id="forma" name="forma" required>
+          <option value="">Selecione</option>
+          <option value="pix">PIX</option>
+          <option value="boleto">Boleto</option>
+          <option value="cartao">Cartão de crédito</option>
+        </select>
+
+        <label for="mensagem">Mensagem de apoio (opcional):</label>
+        <textarea id="mensagem" name="mensagem" rows="3" placeholder="Escreva uma mensagem de incentivo..."></textarea>
+      </fieldset>
+
+          <!-- Botão Mercado Pago
+      <div class="botao-mercado-pago" style="background-color: #f0f0f0; padding: 20px;" ></div> -->
+
+       <button id="botao-doar" type="submit" >Realizar Doação</button>
+      <!-- <button type="submit" style="background-color: #f0f0f0; padding: 20px;">Realizar Doação</button> -->
+    </form>
+  </section>
+
+  <!-- Meta e Progresso -->
+  <section aria-labelledby="titulo-meta">
+    <h2 id="titulo-meta" class="titulo">Meta e Progresso</h2>
+    <p>Meta da campanha: <strong>R$ 50.000</strong></p>
+    <progress value="32000" max="50000" aria-valuenow="32000" aria-valuemax="50000" aria-label="Progresso da arrecadação"></progress>
+    <p>Arrecadado até agora: <strong>R$50</strong></p>
+  </section>
+
+  <!-- Prestação de Contas -->
+  <section aria-labelledby="titulo-contas">
+    <h2 id="titulo-contas" class="titulo">Prestação de Contas</h2>
+    <p>Todos os recursos arrecadados são destinados diretamente aos nossos projetos. Acesse os relatórios na página de <a href="transparencia.html">transparência</a>.</p>
+  </section>
   </main>
 
 <footer> <!-- Rodapé -->
@@ -116,13 +200,58 @@
       <img src="asset/img/voltar.png" alt="#">
     </a>
     <a href="transparencia.html" target="_self" rel="prev">
-      <img src="asset/img/voltar.png" alt="#" style="transform: scaleX(-1);">
+      <img src="asset/img/voltar.png" alt="botão de voltar">
     </a>
   </footer>
 
-  <script src="asset/js/main.js"></script> 
+  <script src="asset/js/main.js"></script> <!-- Script menu mobile -->
   <script src="asset/js/dark.js"></script> <!-- Script dark-mode -->
-  <script src="asset/js/search.js"></script> <!-- Script barra de pesquisa -->
+  <script src="asset/js/search.js"></script>
   <script src="asset/js/menu-hamburger.js"></script> <!-- Script menu hamburger -->
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+<script>
+  document.getElementById('botao-doar').addEventListener('click', async function () {
+    const nome = document.getElementById('nome').value;
+    const valor = parseFloat(document.getElementById('valor').value);
+    const mensagem = document.getElementById('mensagem').value;
+
+    // ✅ Validação do valor mínimo
+    if (isNaN(valor) || valor < 50) {
+      alert('O valor mínimo para doação é R$50.');
+      return;
+    }
+
+    // ✅ Salvar dados no localStorage
+    localStorage.setItem('nomeDoador', nome);
+    localStorage.setItem('valorDoacao', valor);
+    localStorage.setItem('mensagemApoio', mensagem);
+
+    try {
+      // ✅ Enviar valor para o backend
+      const resposta = await fetch('http://localhost:3000/criar-preferencia', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ valor })
+      });
+
+      const dados = await resposta.json();
+
+      // ✅ Redirecionar para o checkout
+      if (dados.init_point) {
+        window.location.href = dados.init_point;
+      } else {
+        alert('Erro ao criar a preferência. Tente novamente.');
+        console.warn("⚠️ Erro ao criar preferência no MP:", dados);
+      }
+    } catch (erro) {
+      alert('Erro de conexão com o servidor. Verifique se o backend está rodando.');
+      console.error(erro);
+    }
+  });
+</script>
+
 </body>
 </html>

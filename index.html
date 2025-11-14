@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Plataforma para ONGs - ONG Educar para mudar" />
-  <title>ONG Educar para mudar cópia</title>
+  <meta name="description" content="ONG Educar para mudar - Transformando vidas através da ação social.">
+  <meta name="keywords" content="ONG, educação, voluntariado, doações, projetos sociais">
+  <meta name="author" content="ONG Educar para Mudar">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="ONG Educar para Mudar">
+  <meta property="og:description" content="Transformando vidas através da ação social.">
+  <meta property="og:image" content="asset/img/projeto-icon.png">
+  <title>ONG Educar para Mudar | Educação e Ação Social</title>
   <link rel="stylesheet" href="asset/css/style.css" />
   <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="asset/img/projeto-icon.png">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <div class="container"> <!-- Botão dark-mode-->
@@ -48,7 +56,7 @@
       <div class="search-container">
         <div class="search-bar" id="searchBar">
           <input id="searchInput" type="text" placeholder="O que você procura?" onkeydown="checkEnter(event)">
-          <button class="close-btn">&times;</button>
+          <button class="close-btn" aria-label="Fechar busca">&times;</button>
         </div>
 
         <div class="search-icon" onclick="buscarEmTempoReal()">
@@ -58,47 +66,55 @@
     </nav>
   </header>
 
-  <main> <!-- Conteúdo principal -->
+ <main> <!-- Conteúdo principal -->
     <div id="resultados" class="resultados-container"></div>
-    <section> <!-- Seção de boas-vindas -->
-      <h1 class="texto">Bem-vindo à ONG Educar para mudar</h1>
-      <p>Transformando vidas através da ação social.</p>
+
+    <section class="boas-vindas" data-aos="zoom-in"> <!-- Seção de boas-vindas -->
+      <h1 class="texto">Transforme vidas com a gente</h1>
+      <p>Educar. Inspirar. Agir. Faça parte da mudança que o mundo precisa.</p>
+      <a href="voluntariado.html" class="cta-button">Seja voluntário agora</a>
+    </section>
+
+    <section class="impacto" data-aos="zoom-in"> <!-- Seção de impacto -->
+      <h2>Nosso impacto</h2>
+      <ul>
+        <li><strong>+500</strong> famílias atendidas</li>
+        <li><strong>+200</strong> voluntários ativos</li>
+        <li><strong>+1000</strong> kits distribuídos</li>
+      </ul>
     </section>
   </main>
 
- <section class="slideshow-container">
+
+ <section class="slideshow-container" data-aos="zoom-in">
     <div class="mySlides fade">
-      <div class="numbertext">1 / 4</div>
-      <img src="asset/img/desktop1.jpeg" style="width:100%">
+      <img src="asset/img/desktop1.jpeg" alt="comunidades carentes da África">
       <div class="text">
-        <p style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;text-indent: 50px; text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.67);"><strong>Ajudamos comunidades carentes</strong>
+        <p class="slide-text"><strong>Impactamos comunidades esquecidas.</strong>
         </p>
       </div>
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
-      <img src="asset/img/desktop2.jpeg">
+      <img src="asset/img/desktop2.jpeg" alt="Voluntários separando doações">
       <div class="text">
-        <p style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;text-indent: 50px; text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.67);"><strong>Fazemos doações</strong>
+        <p class="slide-text"><strong>Doar é transformar</strong>
         </p>
       </div>
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">3 / 4</div>
-      <img src="asset/img/desktop3.jpeg">
+      <img src="asset/img/desktop3.jpeg" alt="Voluntários entregando kits de primeiros socorros">
       <div class="text">
-        <p style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;text-indent: 50px; text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.67);"><strong>Trabalho voluntário</strong>
+        <p class="slide-text"><strong>Voluntariado que salva vidas.</strong>
         </p>
       </div>
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">4 / 4</div>
-      <img src="asset/img/desktop4.jpg">
+      <img src="asset/img/desktop4.jpg" alt="Voluntários separando lixo reciclável">
       <div class="text">
-        <p style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;text-indent: 50px; text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.67);"><strong>Sustentabilidade e reciclagem</strong>
+        <p class="slide-text"><strong>Reciclar é cuidar do futuro.</strong>
         </p>
       </div>
     </div>
@@ -108,19 +124,20 @@
   </section>
 <br>
 
-<div style="text-align:center">
+<div class="round">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
   <span class="dot" onclick="currentSlide(4)"></span> 
 </div>
 
-<h1 class="titulo">Conheça a equipe</h1>
+<h2 class="titulo">Conheça quem faz a transformação acontecer</h2>
+<p>Por trás de cada ação, há pessoas dedicadas que acreditam no poder da educação e da solidariedade.</p>
 
   <section class="row"><!-- Seção da equipe -->
     <div class="column">
-      <div class="card">
-        <img src="asset/img/well.JPG" alt="Well">
+      <div class="card" data-aos="zoom-in">
+        <img src="asset/img/well.JPG" alt="Foto de Wellington Bertoso Santos, CEO da ONG">
         <div class="container-team">
           <h2 class="name"><strong>Wellington Bertoso Santos</strong></h2>
           <p class="title">CEO &amp; Fundador</p>
@@ -133,8 +150,8 @@
     </div>
 
     <div class="column">
-      <div class="card">
-        <img src="asset/img/Mayra da Silva Gal.jpeg" alt="Mayra">
+      <div class="card" data-aos="zoom-in">
+        <img src="asset/img/Mayra da Silva Gal.jpeg" alt="Foto de Mayra da Silva Gal, Diretora Pedagógica da ONG">
         <div class="container-team">
           <h2 class="name">Mayra da Silva Gal</h2>
           <p class="title">Diretora Pedagógica</p>
@@ -148,8 +165,8 @@
     </div>
 
     <div class="column">
-      <div class="card">
-        <img src="asset/img/Roberta Alexandre.jpg" alt="Roberta">
+      <div class="card" data-aos="zoom-in">
+        <img src="asset/img/Roberta Alexandre.jpg" alt="Foto de Roberta Ivanete Alexandre, Designer da ONG">
         <div class="container-team">
           <h2 class="name">Roberta Ivanete Alexandre</h2>
           <p class="title">Designer</p>
@@ -164,22 +181,27 @@
 
  <footer> <!-- Rodapé -->
     <p>&copy; 2025 ONG Educar para mudar. Todos os direitos reservados.</p>
-    <a href="#">
-      <img src="asset/img/logo-facebook.jpg" alt="logo-facebook">
+    <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+      <img src="asset/img/logo-facebook.jpg" alt="logo-facebook" >
     </a>
-    <a href="#">
+    <a  href="#" target="_blank" rel="noopener" aria-label="Instagram">
       <img src="asset/img/logo-instagram.jpg" alt="logo-instagram">
     </a><br>
     <a href="sobre.html" target="_self" rel="prev">
-      <img src="asset/img/voltar.png" alt="#" style="transform: scaleX(-1);">
+      <img class="seta" src="asset/img/voltar.png" alt="Foto botão de seta para à direita" >
     </a>
   </footer>
 
-  <script src="asset/js/main.js"></script> <!-- Script menu mobile -->
-  <script src="asset/js/dark.js"></script> <!-- Script dark-mode -->
-  <script src="asset/js/slides.js"></script> <!-- Script slides -->
-  <script src="asset/js/search.js"></script>
-  <script src="asset/js/menu-hamburger.js"></script> <!-- Script menu hamburger -->
+  <script src="asset/js/main.js" defer></script> <!-- Script menu mobile -->
+  <script src="asset/js/dark.js" defer></script> <!-- Script dark-mode -->
+  <script src="asset/js/slides.js" defer></script> <!-- Script slides -->
+  <script src="asset/js/search.js" defer></script>
+  <script src="asset/js/menu-hamburger.js" defer></script> <!-- Script menu hamburger -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
 

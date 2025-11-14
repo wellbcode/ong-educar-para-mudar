@@ -1,3 +1,6 @@
+# ong-educar-para-mudar
+ Projeto acadêmico voltado ao desenvolvimento de um site institucional para uma ONG fictícia.
+
 # 🌐 Projeto Site ONG
 
 Este repositório contém o código-fonte e a documentação de um site institucional desenvolvido para uma Organização Não Governamental (ONG). O objetivo é promover transparência, engajamento e facilitar a comunicação com o público.
@@ -63,7 +66,7 @@ A documentação técnica está localizada na pasta `docs/` e inclui:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/projeto-ong.git
+   git clone https://github.com/wellbcode/ong-educar-para-mudar.git
 
 2. Abra a pasta no VS Code:
     code projeto-ong
@@ -76,5 +79,10 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 📄 Licença
 Este projeto está licenciado sob os termos da Licença MIT.
 
-👤 Autor
-Desenvolvido por Wellington LinkedIn • GitHub
+👤 Autor  
+Desenvolvido por: Wellington Bertoso Santos
+• [LinkedIn](https://www.linkedin.com/in/wellington-bertoso-santos)
+• [GitHub](https://github.com/wellbcode)
+
+🌐 Site publicado  
+Acesse o site em: [https://wellbcode.github.io/ong-educar-para-mudar/](https://wellbcode.github.io/ong-educar-para-mudar/)
