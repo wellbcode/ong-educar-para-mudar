@@ -6,11 +6,12 @@
   <meta name="description" content="Transparência e prestação de contas da ONG Educar para mudar" />
   <title>Transparência | ONG Educar para mudar</title>
   <link rel="stylesheet" href="asset/css/style.css" />
+  <link rel="stylesheet" href="asset/css/transp.css">
   <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
 <body>
   <div class="container"> <!-- Botão dark-mode-->
@@ -62,32 +63,76 @@
 
   <main>
     <div id="resultados" class="resultados-container"></div>
-    <section>
-      <h1 class="titulo">Transparência</h1>
-      <p>Nosso compromisso com a ética, clareza e responsabilidade na gestão dos recursos.</p>
+    <section class="destaque-transparencia">
+      <div class="conteudo">
+        <i class="fas fa-eye"></i>
+        <h1 class="titulo">Transparência</h1>
+        <p>Nosso compromisso com a <strong>ética</strong>, <strong>clareza</strong> e <strong>responsabilidade</strong> na gestão dos recursos.</p>
+      </div>
     </section>
 
-    <section>
+
+    <section class="documentos">
       <h2 class="titulo">Relatórios Financeiros</h2>
-      <ul>
-        <li><a href="assets/docs/relatorio-financeiro-2024.pdf" target="_blank">Relatório Financeiro 2024</a></li>
-        <li><a href="assets/docs/relatorio-financeiro-2023.pdf" target="_blank">Relatório Financeiro 2023</a></li>
-        <li><a href="assets/docs/relatorio-financeiro-2022.pdf" target="_blank">Relatório Financeiro 2022</a></li>
-      </ul>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-file-pdf"></i>
+          <h3>Relatório Financeiro 2024</h3>
+          <p>Principais investimentos em educação e saúde.</p>
+          <a href="asset/downloads/📘 Relatório Financeiro 2024.pdf" target="_blank" class="btn" type="aplication/pdf">Abrir</a>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-file-pdf"></i>
+          <h3>Relatório Financeiro 2023</h3>
+          <p>Resumo das ações e resultados do ano.</p>
+          <a href="asset/downloads/📘 Relatório Financeiro 2023.pdf" target="_blank" class="btn" type="aplication/pdf">Abrir</a>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-file-pdf"></i>
+          <h3>Relatório Financeiro 2022</h3>
+          <p>Resumo das ações e resultados do ano.</p>
+          <a href="asset/downloads/📘 Relatório Financeiro 2022.pdf" target="_blank" class="btn" type="aplication/pdf">Abrir</a>
+        </div>
+      </div>
     </section>
 
-    <section>
+
+    <section class="documentos-publicos">
       <h2 class="titulo">Documentos Públicos</h2>
-      <ul>
-        <li><a href="assets/docs/estatuto-social.pdf" target="_blank">Estatuto Social</a></li>
-        <li><a href="assets/docs/ata-de-reuniao.pdf" target="_blank">Ata de Reunião Anual</a></li>
-        <li><a href="assets/docs/parcerias.pdf" target="_blank">Termos de Parceria</a></li>
-      </ul>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-file-contract"></i>
+          <h3>Estatuto Social</h3>
+          <p>Documento que define a missão, visão e regras da ONG.</p>
+          <a href="asset/downloads/📄 Estatuto Social.pdf" target="_blank" class="btn" type="aplication/pdf">Abrir</a>
+        </div>
+        <div class="card">
+          <i class="fas fa-handshake"></i>
+          <h3>Ata de Reunião Anual</h3>
+          <p>Registro oficial das decisões e deliberações da assembleia.</p>
+          <a href="asset/downloads/📝 Ata de Reunião Anual.pdf"_blank" class="btn" type="aplication/pdf">Abrir</a>
+        </div>
+        <div class="card">
+          <i class="fas fa-users"></i>
+          <h3>Termos de Parceria</h3>
+          <p>Documentos que formalizam colaborações e projetos conjuntos.</p>
+          <a href="asset/downloads/🤝 Termos de Parceria.pdf" target="_blank" class="btn" type="aplication/pdf">Abrir</a>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section class="grafico-recursos">
       <h2 class="titulo">Distribuição de Recursos</h2>
-      <canvas id="grafico-recursos" width="400" height="200"></canvas>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-chart-pie"></i>
+          <h3>Recursos por Área</h3>
+          <p>Visualização da aplicação dos recursos em 2024.</p>
+          <canvas id="grafico-recursos" width="400" height="200"></canvas>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -118,26 +163,32 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Biblioteca Chart.js -->
   <script src="asset/js/search.js"></script> <!-- Script barra de pesquisa -->
   <script src="asset/js/menu-hamburger.js"></script> <!-- Script menu hamburger -->
+  
   <script>
     const ctx = document.getElementById('grafico-recursos').getContext('2d');
-    const graficoRecursos = new Chart(ctx, {
-      type: 'pie',
-      data: {
-        labels: ['Educação', 'Saúde', 'Meio Ambiente', 'Administração'],
-        datasets: [{
-          label: 'Distribuição de Recursos',
-          data: [40, 30, 20, 10],
-          backgroundColor: ['#18bc9c', '#3498db', '#f39c12', '#e74c3c']
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: { position: 'bottom' },
-          title: { display: true, text: 'Distribuição de Recursos por Área (2024)' }
-        }
+new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: ['Educação', 'Saúde', 'Meio Ambiente', 'Administração'],
+    datasets: [{
+      label: 'Distribuição de Recursos',
+      data: [40, 30, 20, 10],
+      backgroundColor: ['#18bc9c', '#3498db', '#f39c12', '#e74c3c']
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom' },
+      title: {
+        display: true,
+        text: 'Distribuição de Recursos por Área (2024)'
       }
-    });
+    }
+  }
+});
+
   </script>
 </body>
 </html>
