@@ -22,11 +22,11 @@
 </head>
 <body>
   <div class="container"> <!-- Botão dark-mode-->
-        <div class="sun sun-logo">
+        <div class="sun sun-logo" aria-label="Ativar modo claro">
             <i><span class="material-symbols-outlined">sunny</span></i>
         </div>
 
-        <div class="moon moon-logo">
+        <div class="moon moon-logo" aria-label="Ativar modo escuro">
             <i><span class="material-symbols-outlined">dark_mode</span></i>
         </div>
   </div>
@@ -34,12 +34,12 @@
   <header> <!-- Cabeçalho -->
     <h1>ONG Educar para mudar</h1>
       <!-- Ícone do menu hamburger -->
-  <div class="menu-toggle" id="menu-toggle">
-    <!-- &#9776; -->
-     <span></span>
-     <span></span>
-     <span></span>
-  </div>
+    <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
+      <!-- &#9776; -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav id="navbar"> <!-- Menu de navegação -->     
       <ul>
         <li><a href="index.html">Início</a></li>
@@ -50,16 +50,18 @@
         <li><a href="transparencia.html">Transparência</a></li>
         <li><a href="contato.html">Contato</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="documentacao.html">Documentação</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
       </ul>
 
       <!-- ícone da lupinha para fazer buscas site -->   
       <div class="search-container">
         <div class="search-bar" id="searchBar">
           <input id="searchInput" type="text" placeholder="O que você procura?" onkeydown="checkEnter(event)">
-          <button class="close-btn" aria-label="Fechar busca">&times;</button>
+          <button class="close-btn" aria-label="Fechar barra de pesquisa">&times;</button>
         </div>
 
-        <div class="search-icon" onclick="buscarEmTempoReal()">
+        <div class="search-icon" onclick="buscarEmTempoReal()" aria-label="Abrir barra de pesquisa">
           <i class="fas fa-search"></i>
         </div>
       </div>
@@ -137,7 +139,7 @@
   <section class="row"><!-- Seção da equipe -->
     <div class="column">
       <div class="card" data-aos="zoom-in">
-        <img src="asset/img/well.JPG" alt="Foto de Wellington Bertoso Santos, CEO da ONG">
+        <img src="asset/img/well.JPG" alt="Foto de Wellington Bertoso Santos, CEO da ONG" loading="lazy">
         <div class="container-team">
           <h2 class="name"><strong>Wellington Bertoso Santos</strong></h2>
           <p class="title">CEO &amp; Fundador</p>
@@ -151,7 +153,7 @@
 
     <div class="column">
       <div class="card" data-aos="zoom-in">
-        <img src="asset/img/Mayra da Silva Gal.jpeg" alt="Foto de Mayra da Silva Gal, Diretora Pedagógica da ONG">
+        <img src="asset/img/Mayra da Silva Gal.jpeg" alt="Foto de Mayra da Silva Gal, Diretora Pedagógica da ONG" loading="lazy">
         <div class="container-team">
           <h2 class="name">Mayra da Silva Gal</h2>
           <p class="title">Diretora Pedagógica</p>
@@ -166,7 +168,7 @@
 
     <div class="column">
       <div class="card" data-aos="zoom-in">
-        <img src="asset/img/Roberta Alexandre.jpg" alt="Foto de Roberta Ivanete Alexandre, Designer da ONG">
+        <img src="asset/img/Roberta Alexandre.jpg" alt="Foto de Roberta Ivanete Alexandre, Designer da ONG" loading="lazy">
         <div class="container-team">
           <h2 class="name">Roberta Ivanete Alexandre</h2>
           <p class="title">Designer</p>
@@ -181,14 +183,17 @@
 
  <footer> <!-- Rodapé -->
     <p>&copy; 2025 ONG Educar para mudar. Todos os direitos reservados.</p>
-    <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
-      <img src="asset/img/logo-facebook.jpg" alt="logo-facebook" >
+     <!-- Redes sociais -->
+    <a href="#" aria-label="Facebook da ONG">
+      <img src="asset/img/logo-facebook.jpg" alt="Facebook da ONG" loading="lazy">
     </a>
-    <a  href="#" target="_blank" rel="noopener" aria-label="Instagram">
-      <img src="asset/img/logo-instagram.jpg" alt="logo-instagram">
-    </a><br>
-    <a href="sobre.html" target="_self" rel="prev">
-      <img class="seta" src="asset/img/voltar.png" alt="Foto botão de seta para à direita" >
+    <a href="#" aria-label="Instagram da ONG">
+      <img src="asset/img/logo-instagram.jpg" alt="Instagram da ONG" loading="lazy">
+    </a>
+    
+    <br>
+    <a href="sobre.html" target="_self" rel="prev" aria-label="Ir para página Sobre">
+      <img class="seta" src="asset/img/voltar.png" alt="Botão ir para página Sobre" loading="lazy">
     </a>
   </footer>
 

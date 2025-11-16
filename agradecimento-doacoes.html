@@ -2,8 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Obrigado pela sua doação!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="asset/img/projeto-icon.png">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
   <link rel="stylesheet" href="estilos.css">
+  <title>Obrigado pela sua doação!</title>
 </head>
 <style>
 body {
@@ -16,6 +24,23 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+body.dark-mode {
+  background-color: #121212;
+}
+
+body.dark-mode .pagina-obrigado {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .pagina-obrigado a {
+  background-color: #3399ff;
+}
+
+body.dark-mode .pagina-obrigado a:hover {
+  background-color: #1a75d1;
 }
 
 main.agradecimento {
@@ -34,6 +59,7 @@ main.agradecimento h1 {
 }
 
 main.agradecimento p {
+  color: #121212;
   font-size: 1.1rem;
   margin-bottom: 30px;
 }
@@ -60,18 +86,6 @@ main.agradecimento a:hover {
         <a href="index.html">Voltar para a página inicial</a>
    </main>
 
-    <!-- <script>
-        const nome = localStorage.getItem('nomeDoador');
-        const valor = localStorage.getItem('valorDoacao');
-        const mensagem = localStorage.getItem('mensagemApoio');
-
-      document.getElementById('resumo-doacao').innerHTML = `
-        <p><strong>Nome:</strong> ${nome}</p>
-        <p><strong>Valor doado:</strong> R$ ${valor}</p>
-        ${mensagem ? `<p><strong>Mensagem de apoio:</strong> ${mensagem}</p>` : ''}
-     `;
-    </script> -->
-
     <p>Obrigado, <strong id="nomeDoador"></strong>!</p>
     <p>Você doou <strong id="valorDoacao"></strong> reais.</p>
     <p>Sua mensagem: <em id="mensagemApoio"></em></p>
@@ -82,5 +96,16 @@ main.agradecimento a:hover {
         document.getElementById('mensagemApoio').textContent = localStorage.getItem('mensagemApoio');
     </script>
 
+       <div class="container"> <!-- Botão dark-mode-->
+        <div class="sun sun-logo" aria-label="Ativar modo claro">
+            <i><span class="material-symbols-outlined">sunny</span></i>
+        </div>
+
+        <div class="moon moon-logo" aria-label="Ativar modo escuro">
+            <i><span class="material-symbols-outlined">dark_mode</span></i>
+        </div>
+  </div> 
+
+    <script src="asset/js/dark.js"></script> 
 </body>
 </html>

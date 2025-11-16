@@ -8,32 +8,32 @@
   <title>Contato | ONG Educar para mudar</title>
   <link rel="stylesheet" href="asset/css/style.css" />
   <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="asset/css/pojetos.css">
+  <link rel="stylesheet" href="asset/css/projetos.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
 <body>
   <div class="container"> <!-- Botão dark-mode-->
-        <div class="sun sun-logo">
+        <div class="sun sun-logo" aria-label="Ativar modo claro">
             <i><span class="material-symbols-outlined">sunny</span></i>
         </div>
 
-        <div class="moon moon-logo">
+        <div class="moon moon-logo" aria-label="Ativar modo escuro">
             <i><span class="material-symbols-outlined">dark_mode</span></i>
         </div>
   </div>
     
-    <header> <!-- Cabeçalho -->
+  <header> <!-- Cabeçalho -->
     <h1>ONG Educar para mudar</h1>
       <!-- Ícone do menu hamburger -->
-  <div class="menu-toggle" id="menu-toggle">
-    <!-- &#9776; -->
-     <span></span>
-     <span></span>
-     <span></span>
-  </div>
+    <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
+      <!-- &#9776; -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav id="navbar"> <!-- Menu de navegação -->     
       <ul>
         <li><a href="index.html">Início</a></li>
@@ -44,16 +44,18 @@
         <li><a href="transparencia.html">Transparência</a></li>
         <li><a href="contato.html">Contato</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="documentacao.html">Documentação</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
       </ul>
 
       <!-- ícone da lupinha para fazer buscas site -->   
       <div class="search-container">
         <div class="search-bar" id="searchBar">
           <input id="searchInput" type="text" placeholder="O que você procura?" onkeydown="checkEnter(event)">
-          <button class="close-btn">&times;</button>
+          <button class="close-btn" aria-label="Fechar barra de pesquisa">&times;</button>
         </div>
 
-        <div class="search-icon" onclick="buscarEmTempoReal()">
+        <div class="search-icon" onclick="buscarEmTempoReal()" aria-label="Abrir barra de pesquisa">
           <i class="fas fa-search"></i>
         </div>
       </div>
@@ -109,7 +111,7 @@
         <li id="foto17"><span>#</span></li>
     </ul>
 
-      <!--<ul id="album-fotos">
+      <!-- <ul id="album-fotos">
         <li id="foto1"><figcaption class="foto">Reforço escolar</figcaption></li> 
         <li id="foto2"><figcaption class="foto">#</figcaption></li>
         <li id="foto3"><figcaption class="foto">#</figcaption></li>
@@ -127,7 +129,7 @@
         <li id="foto16"><figcaption class="foto">#</figcaption></li>    
         <li id="foto17"><figcaption class="foto">#</figcaption></li>    
     </ul>
-    -->   
+     -->
 
          <!-- <div class="galeria">
      Exemplo de imagem com <picture> -->
@@ -157,26 +159,32 @@
     </section>
   </main>
 
-<footer> <!-- Rodapé -->
+  <footer> <!-- Rodapé -->
     <p>&copy; 2025 ONG Educar para mudar. Todos os direitos reservados.</p>
-    <a href="#">
-      <img src="asset/img/logo-facebook.jpg" alt="logo-facebook">
+    
+    <!-- Redes sociais -->
+    <a href="#" aria-label="Facebook da ONG">
+      <img src="asset/img/logo-facebook.jpg" alt="Facebook da ONG" loading="lazy">
     </a>
-    <a href="#">
-      <img src="asset/img/logo-instagram.jpg" alt="logo-instagram">
-    </a><br>
-    <a href="sobre.html">
-      <img src="asset/img/voltar.png" alt="#">
+    <a href="#" aria-label="Instagram da ONG">
+      <img src="asset/img/logo-instagram.jpg" alt="Instagram da ONG" loading="lazy">
     </a>
-    <a href="voluntariado.html">
-      <img src="asset/img/voltar.png" alt="#" style="transform: scaleX(-1);">
+    
+    <br>
+    
+    <!-- Navegação auxiliar -->
+    <a href="sobre.html" aria-label="Ir para página Sobre">
+      <img src="asset/img/voltar.png" alt="Botão voltar para página Sobre" loading="lazy">
+    </a>
+    <a href="voluntariado.html" aria-label="Ir para página Voluntariado">
+      <img class="seta" src="asset/img/voltar.png" alt="Botão avançar para página Voluntariado" loading="lazy" >
     </a>
   </footer>
 
   <script src="asset/js/main.js"></script> <!-- Script menu mobile -->
   <script src="asset/js/dark.js"></script> <!-- Script dark-mode -->
   <script src="asset/js/search.js"></script> <!-- Script barra de pesquisa -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Biblioteca Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script> <!-- Biblioteca Chart.js -->
   <script src="asset/js/menu-hamburger.js"></script> <!-- Script menu hamburger -->
   <script>
     const ctx = document.getElementById('grafico-impacto').getContext('2d');

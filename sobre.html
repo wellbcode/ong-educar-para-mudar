@@ -13,147 +13,144 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
 <style>
-  /* Estilos exclusivos para o main da página sobre.html */
-/* Estilo geral do main */
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-  line-height: 1.6;
-  background: #fdfdfd;
-}
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+    background: #fdfdfd;
+  }
 
-/* Títulos */
-main .titulo {
-  color: #2c3e50;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
+  /* Títulos */
+  main .titulo {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
 
-/* Seções */
-main section {
-  margin-bottom: 2rem;
-}
+  /* Seções */
+  main section {
+    margin-bottom: 2rem;
+  }
 
-/* Valores em cards */
-main section ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  list-style: none;
-  padding: 0;
-}
+  /* Valores em cards */
+  main section ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+  }
 
-main section ul li {
-  background: #f9f9f9;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 1rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+  main section ul li {
+    background: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
 
-main section ul li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+  main section ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
 
-main section ul li strong {
-  display: block;
-  font-size: 1.2rem;
-  color: #2980b9;
-  margin-bottom: 0.5rem;
-}
+  main section ul li strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #2980b9;
+    margin-bottom: 0.5rem;
+  }
 
-/* Artigos (Histórico e Equipe) */
-main article {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  border-left: 4px solid #2980b9;
-  background: #eef6ff;
-  border-radius: 4px;
-}
+  /* Artigos (Histórico e Equipe) */
+  main article {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 4px solid #2980b9;
+    background: #eef6ff;
+    border-radius: 4px;
+  }
 
-/* Timeline container */
-main section:nth-of-type(4) { /* pega a seção Histórico e Conquistas */
-  position: relative;
-  padding-left: 2rem;
-  border-left: 3px solid #2980b9;
-}
+  /* Timeline container */
+  main section:nth-of-type(4) { /* pega a seção Histórico e Conquistas */
+    position: relative;
+    padding-left: 2rem;
+    border-left: 3px solid #2980b9;
+  }
 
-/* Cada evento da timeline */
-main section:nth-of-type(4) article {
-  position: relative;
-  margin-bottom: 2rem;
-  padding-left: 1rem;
-}
+  /* Cada evento da timeline */
+  main section:nth-of-type(4) article {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+  }
 
-main section:nth-of-type(4) article::before {
-  content: "";
-  position: absolute;
-  left: -1.1rem;
-  top: 0.5rem;
-  width: 15px;
-  height: 15px;
-  background: #2980b9;
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
+  main section:nth-of-type(4) article::before {
+    content: "";
+    position: absolute;
+    left: -1.1rem;
+    top: 0.5rem;
+    width: 15px;
+    height: 15px;
+    background: #2980b9;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
 
-/* Títulos dos eventos */
-main section:nth-of-type(4) article h3 {
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
-}
+  /* Títulos dos eventos */
+  main section:nth-of-type(4) article h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
 
-/* Lista de conquistas */
-main section:nth-of-type(4) ul {
-  list-style: none;
-  padding: 0;
-}
+  /* Lista de conquistas */
+  main section:nth-of-type(4) ul {
+    list-style: none;
+    padding: 0;
+  }
 
-main section:nth-of-type(4) ul li {
-  margin-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  border-left: 2px solid #ccc;
-}
+  main section:nth-of-type(4) ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid #ccc;
+  }
 
-/* Equipe em cards */
-main section:nth-of-type(5) ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  list-style: none;
-  padding: 0;
-}
+  /* Equipe em cards */
+  main section:nth-of-type(5) ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+  }
 
-main section:nth-of-type(5) ul li {
-  flex: 1 1 250px;
-  background: #f9f9f9;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+  main section:nth-of-type(5) ul li {
+    flex: 1 1 250px;
+    background: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
 
-main section:nth-of-type(5) ul li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+  main section:nth-of-type(5) ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
 
-main section:nth-of-type(6) ul li::before {
-  content: "👤 ";
-  font-size: 1.2rem;
-}
-
+  main section:nth-of-type(6) ul li::before {
+    content: "👤 ";
+    font-size: 1.2rem;
+  }
 </style>
 <body>
   <div class="container"> <!-- Botão dark-mode-->
-        <div class="sun sun-logo">
+        <div class="sun sun-logo" aria-label="Ativar modo claro">
             <i><span class="material-symbols-outlined">sunny</span></i>
         </div>
 
-        <div class="moon moon-logo">
+        <div class="moon moon-logo" aria-label="Ativar modo escuro">
             <i><span class="material-symbols-outlined">dark_mode</span></i>
         </div>
   </div>
@@ -161,12 +158,12 @@ main section:nth-of-type(6) ul li::before {
   <header> <!-- Cabeçalho -->
     <h1>ONG Educar para mudar</h1>
       <!-- Ícone do menu hamburger -->
-  <div class="menu-toggle" id="menu-toggle">
-    <!-- &#9776; -->
-     <span></span>
-     <span></span>
-     <span></span>
-  </div>
+    <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
+      <!-- &#9776; -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav id="navbar"> <!-- Menu de navegação -->     
       <ul>
         <li><a href="index.html">Início</a></li>
@@ -177,16 +174,18 @@ main section:nth-of-type(6) ul li::before {
         <li><a href="transparencia.html">Transparência</a></li>
         <li><a href="contato.html">Contato</a></li>
         <li><a href="blog.html">Blog</a></li>
+        <li><a href="documentacao.html">Documentação</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
       </ul>
 
       <!-- ícone da lupinha para fazer buscas site -->   
       <div class="search-container">
         <div class="search-bar" id="searchBar">
           <input id="searchInput" type="text" placeholder="O que você procura?" onkeydown="checkEnter(event)">
-          <button class="close-btn">&times;</button>
+          <button class="close-btn" aria-label="Fechar barra de pesquisa">&times;</button>
         </div>
 
-        <div class="search-icon" onclick="buscarEmTempoReal()">
+        <div class="search-icon" onclick="buscarEmTempoReal()" aria-label="Abrir barra de pesquisa">
           <i class="fas fa-search"></i>
         </div>
       </div>
@@ -244,14 +243,14 @@ main section:nth-of-type(6) ul li::before {
     <h2 class="titulo">Histórico e Conquistas</h2>
     <article>
       <h3 class="titulo">Fundação</h3>
-      <p>A O Educar para mudar foi fundada em 2023 por um grupo de amigos.</p>
+      <p>A ONG Educar para mudar foi fundada em 2023 por um grupo de amigos.</p>
     </article>
     <article>
       <h3 class="titulo">Principais Conquistas</h3>
       <ul>
         <li>Mais de 10 mil pessoas impactadas diretamente</li>
         <li>Prêmio Nacional de Inovação Social (2020)</li>
-        <li>Parcerias com 50+ instituições públicas e privadas</li>
+        <li>Parcerias com + de 50 instituições públicas e privadas</li>
       </ul>
     </article>
   </section>
@@ -264,7 +263,7 @@ main section:nth-of-type(6) ul li::before {
         <ul>
           <li><p>Wellington Bertoso Santos</p><p>Presidente</p></li>
           <li><p>Mayra da Silva Gal</p><p>Diretora Pedagógica</p></li>
-          <li><p>Roberta Ivanete Alexandre/p><p>Designer</p></li>
+          <li><p>Roberta Ivanete Alexandre<p><p></p>Designer</p></li>
         </ul>
       </article>
       <article>
@@ -274,19 +273,25 @@ main section:nth-of-type(6) ul li::before {
     </section>
   </main>
 
-<footer> <!-- Rodapé -->
+  <footer> <!-- Rodapé -->
     <p>&copy; 2025 ONG Educar para mudar. Todos os direitos reservados.</p>
-    <a href="#">
-      <img src="asset/img/logo-facebook.jpg" alt="logo-facebook">
+    
+    <!-- Redes sociais -->
+    <a href="#" aria-label="Facebook da ONG">
+      <img src="asset/img/logo-facebook.jpg" alt="Facebook da ONG" loading="lazy">
     </a>
-    <a href="#">
-      <img src="asset/img/logo-instagram.jpg" alt="logo-instagram">
-    </a><br>
-    <a href="index.html" target="_self" rel="prev">
-      <img src="asset/img/voltar.png" alt="#">
+    <a href="#" aria-label="Instagram da ONG">
+      <img src="asset/img/logo-instagram.jpg" alt="Instagram da ONG" loading="lazy">
     </a>
-    <a href="projetos.html" target="_self" rel="prev">
-      <img src="asset/img/voltar.png" alt="#" style="transform: scaleX(-1);">
+    
+    <br>
+    
+    <!-- Navegação auxiliar -->
+    <a href="index.html" aria-label="Ir para página Principal">
+      <img src="asset/img/voltar.png" alt="Botão voltar ir página Principal" loading="lazy">
+    </a>
+    <a href="projetos.html" aria-label="Ir para página Projetos">
+      <img class="seta" src="asset/img/voltar.png" alt="Botão avançar para página Projetos" loading="lazy" >
     </a>
   </footer>
 

@@ -200,30 +200,6 @@ button[type="submit"]:hover {
   margin-top: 1rem;
 }
 
-/* Rodapé */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #0055aa;
-  color: #fff;
-}
-
-footer a img {
-  width: 32px;
-  margin: 0 5px;
-}
-
-/* WhatsApp flutuante */
-.whats {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-.whats img {
-  width: 50px;
-}
-
 /* Estilização do site */
 header { /* Cabeçalho **/
   position: relative;
@@ -255,12 +231,12 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  
 }
 
 nav a:hover {
   border-bottom: 3px white solid;
 }
+
 
 /* Ícone do menu hamburger animado */
 .menu-toggle {
@@ -456,7 +432,6 @@ nav {
   margin-bottom: 10px;
 }
 
-
 .card-img {
   max-width: 100px;
   margin: 10px 5px 0 0;
@@ -616,7 +591,6 @@ main {
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.67);
 }
 
-
 /* Texto da legenda (opcional) */
 .text {
   color: #f2f2f2;
@@ -698,7 +672,6 @@ main {
   margin-right: auto;
 }
 
-
 .cta-button {
   display: inline-block;
   padding: 12px 24px;
@@ -709,10 +682,10 @@ main {
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
+
 .cta-button:hover {
   background-color: #0056b3;
 }
-
 
 /*Secão da equipe, 3 colunas lado a lado*/
 .row{
@@ -820,10 +793,12 @@ main {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
+
 #mensagem-sucesso.visivel {
   display: block;
   opacity: 1;
 }
+
 #mensagem-sucesso.fade-out {
   opacity: 0;
 }
@@ -884,6 +859,7 @@ main {
   background-color: #555;
 }
 
+/*Área do rodapé*/
 footer{
     clear: both;
     margin-top: 100px;
@@ -902,6 +878,11 @@ footer p{
 }
 footer a{
    text-decoration: none;
+}
+
+footer a img {
+  width: 32px;
+  margin: 0 5px;
 }
 
 footer img{
@@ -927,6 +908,13 @@ footer img:hover{
   transform: scaleX(-1);
 }
 
+/* WhatsApp flutuante */
+.whats {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 .whats i {
   position: fixed;
   font-size: 100px;
@@ -937,6 +925,10 @@ footer img:hover{
 
 body.dark-mode .whats {
   background-color: #202020; /* fundo escuro no modo dark */
+}
+
+body.dark-mode .contato {
+  background-color: #121212; /* fundo escuro no modo dark */
 }
 
 @media screen and (max-width: 900px) {
