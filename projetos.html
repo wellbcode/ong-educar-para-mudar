@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Projetos sociais desenvolvidos pela Educar para mudar" />
   <meta name="keywords" content="ONG, projetos, voluntários, pessoas, sociais">
-  <title>Contato | ONG Educar para mudar</title>
+  <title>Projetos | ONG Educar para mudar</title>
   <link rel="stylesheet" href="asset/css/style.css" />
   <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
   <link rel="stylesheet" href="asset/css/projetos.css">
@@ -64,89 +64,156 @@
 
   <main>
     <div id="resultados" class="resultados-container"></div>
-    <section>
-      <h1 class="titulo">Projetos Sociais</h1>
-      <p>Conheça os projetos que estão transformando comunidades em todo o mundo.</p>
+    <section class="destaque-projetos">
+      <div class="overlay">
+        <!-- <h1 class="titulo">Projetos que Transformam</h1> 
+        <p>Explore iniciativas que estão mudando vidas, fortalecendo comunidades e inspirando um futuro melhor.</p>-->
+      </div>
     </section>
 
-    <section>
-      <h2 class="titulo">Projetos em Destaque</h2>
-      <article>
-        <h3 class="titulo">Projeto Educar para o Futuro</h3>
-        <p>Oficinas de reforço escolar e inclusão digital para crianças e adolescentes.</p>
-        <p><strong>Categoria:</strong> Educação</p>
-        <p><strong>Impacto:</strong> 500 alunos atendidos em 2024</p>
-      </article>
-
-      <article>
-        <h3 class="titulo">Projeto Saúde na Comunidade</h3>
-        <p>Atendimentos médicos gratuitos e campanhas de prevenção em áreas vulneráveis.</p>
-        <p><strong>Categoria:</strong> Saúde</p>
-        <p><strong>Impacto:</strong> 1.200 pessoas beneficiadas</p>
-      </article>
-    </section>
 
     <section>
-      <h2 class="titulo">Galeria de Fotos</h2>
-      <p>
-        Nossa galeria de fotos contempla várias belas imagens que mostram algums momentos marcantes dos nossos projetos em ação. como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
-      </p>
-   
-      <ul id="album-fotos">
-        <li id="foto1"><span>Reforço escolar</span></li>
-        <li id="foto2"><span>Atendimento médico comunitário</span></li>
-        <li id="foto3"><span>#</span></li>
-        <li id="foto4"><span>#</span></li>
-        <li id="foto5"><span>#</span></li>
-        <li id="foto6"><span>#</span></li>
-        <li id="foto7"><span>#</span></li>    
-        <li id="foto8"><span>#</span></li> 
-        <li id="foto9"><span>#</span></li>   
-        <li id="foto10"><span>#</span></li>      
-        <li id="foto12"><span>#</span></li>   
-        <li id="foto13"><span>#</span></li>    
-        <li id="foto14"><span>#</span></li>   
-        <li id="foto15"><span>#</span></li>
-        <li id="foto16"><span>#</span></li>  
-        <li id="foto17"><span>#</span></li>
-    </ul>
+      <h2 class="titulo">Projetos por Categoria</h2>
+      <div class="filtros">
+        <button onclick="filtrarProjetos('todos')">Todos</button>
+        <button onclick="filtrarProjetos('educacao')">Educação</button>
+        <button onclick="filtrarProjetos('saude')">Saúde</button>
+        <button onclick="filtrarProjetos('cultura')">Cultura</button>
+        <button onclick="filtrarProjetos('meio-ambiente')">Meio ambiente</button>
+      </div>
 
-      <!-- <ul id="album-fotos">
-        <li id="foto1"><figcaption class="foto">Reforço escolar</figcaption></li> 
-        <li id="foto2"><figcaption class="foto">#</figcaption></li>
-        <li id="foto3"><figcaption class="foto">#</figcaption></li>
-        <li id="foto4"><figcaption class="foto">#</figcaption></li>
-        <li id="foto5"><figcaption class="foto">#</figcaption></li>
-        <li id="foto6"><figcaption class="foto">#</figcaption></li>    
-        <li id="foto7"><figcaption class="foto">#</figcaption></li>    
-        <li id="foto8"><figcaption class="foto">#</figcaption></li>    
-        <li id="foto9"><figcaption class="foto">#</figcaption></li>    
-        <li id="foto10"><figcaption class="foto">#</figcaption></li>      
-        <li id="foto12"><figcaption class="foto">#</figcaption></li>    
-        <li id="foto13"><figcaption class="foto">#</figcaption></li>    
-        <li id="foto14"><figcaption class="foto">#</figcaption></li>    
-        <li id="foto15"><figcaption class="foto">#</figcaption></li>    
-        <li id="foto16"><figcaption class="foto">#</figcaption></li>    
-        <li id="foto17"><figcaption class="foto">#</figcaption></li>    
-    </ul>
-     -->
+      <div class="grid-projetos">
+        <div class="card-projeto educacao">
+          <img src="asset/img/projeto1.jpg" alt="Reforço escolar" class="card-img">
+          <div class="card-conteudo">
+            <h3><i class="fas fa-book"></i> Projeto Educar para o Futuro</h3>
+            <p>Oficinas de reforço escolar e inclusão digital.</p>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
 
-         <!-- <div class="galeria">
-     Exemplo de imagem com <picture> -->
-        <!-- <picture>
-          <source srcset="asset/img/projeto1.jpg" type="image/jpg">
-          <img width="100%" src="asset/img/projeto1.jpg" alt="Crianças em aula de reforço escolar" loading="lazy">
-        </picture>
-        <picture>
-          <source srcset="asset/img/projeto2.jpg" type="image/jpg">
-          <img width="100%" src="asset/img/projeto2.jpg" alt="Atendimento médico comunitário" loading="lazy">
-        </picture> -->
-        <!-- Adicione mais imagens conforme necessário 
-      </div>-->
+        <div class="card-projeto saude">
+          <img src="asset/img/projeto12.png" alt="Atendimento médico" class="card-img">
+          <div class="card-conteudo">
+            <h3><i class="fas fa-heartbeat"></i> Projeto Saúde na Comunidade</h3>
+            <p>Campanhas de prevenção e atendimentos gratuitos.</p>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card-projeto cultura">
+          <img src="asset/img/projeto5.png" alt="Oficina de arte" class="card-img">
+          <div class="card-conteudo">
+            <h3><i class="fas fa-palette"></i> Projeto ExpressArte</h3>
+            <p>Oficinas de arte e cultura para crianças,jovens e adultos.</p>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+        
+        <div class="card-projeto saude">
+          <img src="asset/img/projeto2.jpg" alt="Equipe médica em ambiente hospitalar" class="card-img">
+          <div class="card-conteudo">
+            <h3><i class="fas fa-user-md"></i> Projeto Cuidar com Humanidade</h3>
+            <p>Atendimentos gratuitos realizados por profissionais da saúde em comunidades vulneráveis.</p>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card-projeto saude">
+          <img src="asset/img/projeto6.png" alt="Voluntária medindo pressão de idosa" class="card-img">
+          <div class="card-conteudo">
+            <h3><i class="fas fa-heart"></i> Projeto Saúde com Empatia</h3>
+            <p>Atendimentos comunitários com voluntários em ações de saúde preventiva.</p>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card-projeto social">
+          <img src="asset/img/projeto4.png" alt="Crianças abraçadas sorrindo" class="card-img">
+          <div class="card-conteudo">
+            <h3><i class="fas fa-child"></i> Projeto Laços de Amizade</h3>
+            <p>Promoção de vínculos afetivos e atividades de convivência entre crianças.</p>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card-projeto educacao">
+          <img src="asset/img/projeto3.png" alt="Voluntária ajudando criança a escrever" class="card-img">
+          <div class="card-conteudo">
+            <h3><i class="fas fa-hands-helping"></i> Projeto Voluntários do Saber</h3>
+            <p>Mentoria educacional com voluntários em escolas públicas.</p>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card-projeto meio-ambiente">
+          <img src="asset/img/projeto10.png" alt="Crianças e adulto em atividade de jardinagem" class="card-img">
+          <div class="card-conteudo">
+            <h3><i class="fas fa-leaf"></i> Projeto Mãos na Terra</h3>
+            <p>Oficinas de jardinagem e cuidado com o meio ambiente para crianças.</p>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card-projeto educacao">
+          <img src="asset/img/projeto11.png" alt="Professora ajudando aluno em sala de aula" class="card-img">
+          <div class="card-conteudo">
+            <h3><i class="fas fa-chalkboard-teacher"></i> Projeto Educação com Afeto</h3>
+            <p>Acompanhamento pedagógico com foco em vínculo e acolhimento escolar.</p>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card-projeto meio-ambiente">
+          <img src="asset/img/projeto9.png" alt="Mãos plantando muda de árvore" class="card-img">
+          <div class="card-conteudo">
+            <h3><i class="fas fa-seedling"></i> Projeto Cultivar Esperança</h3>
+            <p>Atividades de plantio e educação ambiental com crianças e famílias em espaços comunitários.</p>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card-projeto saude">
+        <img src="asset/img/projeto7.png" alt="Profissional de saúde aplicando vacina em idosa com apoio de voluntária" class="card-img">
+        <div class="card-conteudo">
+          <h3><i class="fas fa-syringe"></i> Projeto Saúde com Cuidado</h3>
+          <p>Campanhas de vacinação e apoio comunitário para idosos, com equipe de saúde e voluntários.</p>
+          <a href="#" class="btn-saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card-projeto meio-ambiente">
+        <img src="asset/img/projeto8.png" alt="Adulto e crianças em atividade de jardinagem e plantio" class="card-img">
+        <div class="card-conteudo">
+          <h3><i class="fas fa-leaf"></i> Projeto Jardim Comunitário</h3>
+          <p>Oficinas de jardinagem e educação ambiental com crianças e famílias em espaços públicos.</p>
+          <a href="#" class="btn-saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card-projeto cultura">
+        <img src="asset/img/projeto14.png" alt="Pessoas de várias idades em oficina de arte comunitária" class="card-img">
+        <div class="card-conteudo">
+          <h3><i class="fas fa-palette"></i> Projeto ExpressArte Comunitário</h3>
+          <p>Oficinas de pintura, escultura e expressão artística para crianças, jovens, adultos e idosos.</p>
+          <a href="#" class="btn-saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card-projeto cultura">
+        <img src="asset/img/projeto13.jpg" alt="Grupo diverso em oficina de dança cultural" class="card-img">
+        <div class="card-conteudo">
+          <h3><i class="fas fa-music"></i> Projeto Cultura em Movimento</h3>
+          <p>Atividades culturais como dança, música e teatro para todas as faixas etárias em centros comunitários.</p>
+          <a href="#" class="btn-saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+    </div>
     </section>
 
     <section>
       <h2 class="titulo">Vídeos Institucionais</h2>
+      <p class="video-descricao titulo">Conheça nosso projeto de natação com crianças da rede pública.</p>
       <div class="video">
         <iframe width="100%" height="500" src="https://www.youtube.com/embed/_IM9ZQyAWP0?si=5v2yGL_EUDbNwVHp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
@@ -206,6 +273,61 @@
         }
       }
     });
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const contexto = document.getElementById('grafico-impacto').getContext('2d');
+
+  new Chart(contexto, {
+    type: 'bar',
+    data: {
+      labels: ['Educação', 'Saúde', 'Cultura'],
+      datasets: [{
+        label: 'Pessoas Impactadas',
+        data: [500, 1200, 300],
+        backgroundColor: ['#4CAF50', '#2196F3', '#FFC107']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top'
+        },
+        title: {
+          display: true,
+          text: 'Indicadores de Impacto'
+        }
+      }
+    }
+  });
+</script>
+
+  <script>
+    function filtrarProjetos(categoria) {
+      const container = document.querySelector('.grid-projetos');
+      const cards = document.querySelectorAll('.card-projeto');
+
+      if (categoria === 'todos') {
+        container.classList.remove('centralizado');
+        cards.forEach(card => {
+          card.classList.remove('oculto', 'slide-left', 'slide-right');
+        });
+      } else {
+        container.classList.add('centralizado');
+        cards.forEach((card, index) => {
+          if (card.classList.contains(categoria)) {
+            card.classList.remove('oculto', 'slide-left', 'slide-right');
+          } else {
+            card.classList.add('oculto');
+            card.classList.remove('slide-left', 'slide-right');
+            // Alterna direção de saída
+            card.classList.add(index % 2 === 0 ? 'slide-left' : 'slide-right');
+          }
+        });
+      }
+    }
   </script>
 </body>
 </html>
