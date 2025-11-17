@@ -1,9 +1,27 @@
-# ong-educar-para-mudar
+# 🌐 ONG Educar para Mudar
+
  Projeto acadêmico voltado ao desenvolvimento de um site institucional para uma ONG fictícia.
+ Este repositório contém o código-fonte e a documentação de um site institucional desenvolvido para uma Organização Não Governamental (ONG). O objetivo é promover transparência, engajamento e facilitar a comunicação com o público.
 
-# 🌐 Projeto Site ONG
+![GitHub repo size](https://img.shields.io/github/repo-size/wellbcode/ong-educar-para-mudar)
+![GitHub last commit](https://img.shields.io/github/last-commit/wellbcode/ong-educar-para-mudar)
+![GitHub issues](https://img.shields.io/github/issues/wellbcode/ong-educar-para-mudar)
+![License](https://img.shields.io/github/license/wellbcode/ong-educar-para-mudar)
 
-Este repositório contém o código-fonte e a documentação de um site institucional desenvolvido para uma Organização Não Governamental (ONG). O objetivo é promover transparência, engajamento e facilitar a comunicação com o público.
+Projeto acadêmico voltado ao desenvolvimento de um site institucional para uma ONG fictícia.  
+O objetivo é promover **transparência, engajamento e facilitar a comunicação com o público**.
+
+---
+
+## 📸 Screenshot
+![Screenshot do site](asset/img/screenshot-home.png)
+
+---
+
+## 🌱 Missão, Visão e Valores
+- **Missão:** Promover educação e transformação social.  
+- **Visão:** Ser referência nacional em inclusão e impacto comunitário.  
+- **Valores:** Ética, responsabilidade, colaboração e sustentabilidade.  
 
 ---
 
@@ -46,6 +64,9 @@ projeto-ong/
 - `voluntariado.html` — Cadastro de voluntários
 - `contato.html` — Formulário de contato
 - `blog.html` — Publicações e novidades
+- `documentacao.html` — Documentação do projeto versão em português
+- `documentation.html` — Documentação do projeto versão em inglês
+
 
 ---
 
@@ -86,3 +107,4 @@ Desenvolvido por: Wellington Bertoso Santos
 
 🌐 Site publicado  
 Acesse o site em: [https://wellbcode.github.io/ong-educar-para-mudar/](https://wellbcode.github.io/ong-educar-para-mudar/)
+
