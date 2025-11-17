@@ -86,7 +86,7 @@ main {
 .evento::before {
   content: "";
   position: absolute;
-  left: -53px;
+  left: -54px;
   top: 0;
   width: 20px;
   height: 20px;
