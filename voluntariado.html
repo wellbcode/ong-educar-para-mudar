@@ -130,110 +130,108 @@
   </main> -->
 
  <main>
-  <div id="resultados" class="resultados-container"></div>
-
-  <!-- Destaque inicial -->
-  <section class="destaque-voluntariado">
-    <h1 class="titulo">Voluntariado</h1>
-    <p>Participe dos nossos projetos e ajude a transformar realidades.</p>
-  </section>
-
-  <!-- Oportunidades -->
-  <section class="oportunidades">
-    <h2 class="titulo">Oportunidades Abertas</h2>
-    <div class="cards">
-      <div class="card">
-        <i class="fas fa-chalkboard-teacher"></i>
-        <h3>Mentoria educacional</h3>
-        <p>Apoie jovens em seus estudos e desenvolvimento pessoal.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-box-open"></i>
-        <h3>Campanhas de arrecadação</h3>
-        <p>Auxilie na logística e distribuição de recursos.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-bullhorn"></i>
-        <h3>Produção de conteúdo</h3>
-        <p>Crie materiais e gerencie nossas mídias sociais.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-child"></i>
-        <h3>Atividades recreativas</h3>
-        <p>Promova brincadeiras e oficinas para crianças.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cadastro -->
-  <section class="cadastro-voluntario">
-    <h2 class="titulo">Cadastro de Voluntário</h2>
-    <form id="form-voluntario" action="https://formspree.io/f/xpwbqzzp" method="POST" enctype="multipart/form-data"
-      role="form"    aria-describedby="mensagem-sucesso">
-      <fieldset>
-        <legend>Dados Pessoais</legend>
-        <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
-
-        <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required />
-
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required />
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
-      </fieldset>
-
-      <fieldset>
-        <legend>Perfil e Disponibilidade</legend>
-        <label for="habilidades">Habilidades:</label>
-        <input type="text" id="habilidades" name="habilidades" placeholder="Ex.: comunicação, organização, ensino" />
-
-        <label for="disponibilidade">Disponibilidade:</label>
-        <select id="disponibilidade" name="disponibilidade" required>
-          <option value="">Selecione</option>
-          <option value="manhã">Manhã</option>
-          <option value="tarde">Tarde</option>
-          <option value="noite">Noite</option>
-          <option value="fim-de-semana">Fim de semana</option>
-        </select>
-
-        <label for="motivacao">Por que deseja ser voluntário?</label>
-        <textarea id="motivacao" name="motivacao" rows="4" placeholder="Compartilhe sua motivação" required></textarea>
-      </fieldset>
-
-      <button type="submit" class="btn-enviar">Enviar Cadastro</button>
-      <input id="uploadcare-file" type="hidden" role="uploadcare-uploader" name="arquivo" />
-    </form>
-
-    <!-- Mensagem de feedback  -->
-    <div id="mensagem-sucesso" class="alerta sucesso">
-      <span class="icon">✔</span>
-      Cadastro enviado com sucesso! Em breve entraremos em contato.
-    </div>
-
-    <div id="mensagem-erro" class="alerta erro">
-      <span class="icon">⚠</span>
-      Por favor, preencha todos os campos obrigatórios corretamente.
-    </div>
-
-    <!-- Modal Sucesso / Erro -->
-    <div id="modal-feedback" class="modal-overlay">
-      <div class="modal-box">
-        <span class="modal-icon"></span>
-        <p class="modal-msg"></p>
-        <button id="modal-close" class="modal-btn" type="button">OK</button>
-      </div>
-    </div>
-
-  </section>
-
-    <!-- Histórico -->
-    <section class="historico">
-      <h2 class="titulo">Histórico de Participação</h2>
-      <p>Voluntários cadastrados poderão acessar seu histórico de atividades e emitir certificados digitais.</p>
+    <!-- Destaque inicial -->
+    <section class="destaque-voluntariado">
+      <h1 class="titulo">Voluntariado</h1>
+      <p>Participe dos nossos projetos e ajude a transformar realidades.</p>
     </section>
+
+    <!-- Oportunidades -->
+    <section class="oportunidades">
+      <h2 class="titulo">Oportunidades Abertas</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>Mentoria educacional</h3>
+          <p>Apoie jovens em seus estudos e desenvolvimento pessoal.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-box-open"></i>
+          <h3>Campanhas de arrecadação</h3>
+          <p>Auxilie na logística e distribuição de recursos.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-bullhorn"></i>
+          <h3>Produção de conteúdo</h3>
+          <p>Crie materiais e gerencie nossas mídias sociais.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-child"></i>
+          <h3>Atividades recreativas</h3>
+          <p>Promova brincadeiras e oficinas para crianças.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cadastro -->
+    <section class="cadastro-voluntario">
+      <h2 class="titulo">Cadastro de Voluntário</h2>
+      <form id="form-voluntario" action="https://formspree.io/f/xpwbqzzp" method="POST" enctype="multipart/form-data"
+        role="form"    aria-describedby="mensagem-sucesso">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required />
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Perfil e Disponibilidade</legend>
+          <label for="habilidades">Habilidades:</label>
+          <input type="text" id="habilidades" name="habilidades" placeholder="Ex.: comunicação, organização, ensino" />
+
+          <label for="disponibilidade">Disponibilidade:</label>
+          <select id="disponibilidade" name="disponibilidade" required>
+            <option value="">Selecione</option>
+            <option value="manhã">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+            <option value="fim-de-semana">Fim de semana</option>
+          </select>
+
+          <label for="motivacao">Por que deseja ser voluntário?</label>
+          <textarea id="motivacao" name="motivacao" rows="4" placeholder="Compartilhe sua motivação" required></textarea>
+        </fieldset>
+
+        <button type="submit" class="btn-enviar">Enviar Cadastro</button>
+        <input id="uploadcare-file" type="hidden" role="uploadcare-uploader" name="arquivo" />
+      </form>
+
+      <!-- Mensagem de feedback  -->
+      <div id="mensagem-sucesso" class="alerta sucesso">
+        <span class="icon">✔</span>
+        Cadastro enviado com sucesso! Em breve entraremos em contato.
+      </div>
+
+      <div id="mensagem-erro" class="alerta erro">
+        <span class="icon">⚠</span>
+        Por favor, preencha todos os campos obrigatórios corretamente.
+      </div>
+
+      <!-- Modal Sucesso / Erro -->
+      <div id="modal-feedback" class="modal-overlay">
+        <div class="modal-box">
+          <span class="modal-icon"></span>
+          <p class="modal-msg"></p>
+          <button id="modal-close" class="modal-btn" type="button">OK</button>
+        </div>
+      </div>
+
+    </section>
+
+      <!-- Histórico -->
+      <section class="historico">
+        <h2 class="titulo">Histórico de Participação</h2>
+        <p>Voluntários cadastrados poderão acessar seu histórico de atividades e emitir certificados digitais.</p>
+      </section>
   </main>
 
   <footer> <!-- Rodapé -->

@@ -71,8 +71,7 @@ body.dark-mode button[type="submit"]:hover {
   font-size: 1.4em;
   width: fit-content;
   height: fit-content;
-  transition: transform 0.2s;
-    
+  transition: transform 0.2s; 
 }
 
 .dark{
@@ -208,7 +207,6 @@ header { /* Cabeçalho **/
   min-height: 50px;
   color: var(--nine-color);
   padding: 1rem;
-
 }
 
 header h1{
@@ -512,7 +510,8 @@ mark {
 }
 
 main {
-  padding: 2rem;
+   margin-top: 0;
+  padding-top: 0;
 }
 
 .texto{
@@ -1070,18 +1069,37 @@ body.dark-mode .impacto{
   }
 }
 
+
+/* Toggle fixo e colado no canto esquerdo no mobile */
 @media (max-width: 480px) {
-  .container {
-    top: 12px;
-    right: 12px;
+  .container { /* use uma classe dedicada em vez de .container */
+    top: env(safe-area-inset-top, 0);
+    left: env(safe-area-inset-left, 0);
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    line-height: 1;
+    box-sizing: border-box;
+    pointer-events: auto;
   }
 
-  .container .sun-logo,
-  .container .moon-logo {
-    padding: 6px;
+  .darkmode-toggle .sun-logo,
+  .darkmode-toggle .moon-logo {
+    padding: 4px;
+    display: inline-flex;
   }
+
+  /* Material Symbols costumam ter espaçamento. Ajuste: */
+  .material-symbols-outlined {
+    font-size: 22px;
+    line-height: 1;
+    vertical-align: middle;
+  }
+}
 
   .destaque-projetos {
     margin-top: 90px !important; /* Evita que a imagem fique colada */
   }
-}
