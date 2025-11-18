@@ -4,121 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Blog e notícias da ONG Educar para mudar - Atualizações e imprensa" />
-  <title>Blog | ONG Educar para mudar</title>
+  <meta property="og:title" content="Blog — Conteúdos e Notícias">
+  <meta property="og:description" content="Leia histórias e novidades sobre nossos projetos sociais.">
+  <meta property="og:image" content="asset/img/blog.png">
   <link rel="stylesheet" href="asset/css/style.css" />
+  <link rel="stylesheet" href="asset/css/blog.css">
   <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="asset/img/projeto-icon.png">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <title>Blog — Notícias e Artigos | ONG Educar para mudar</title>
 </head>
-<style>
-  main {
-  font-family: 'Segoe UI', sans-serif;
-  padding: 2rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-section {
-  margin-bottom: 2.5rem;
-}
-
-h1, h2, h3 {
-  color: #2c3e50;
-}
-
-a {
-  color: #0077cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.newsletter-form {
-  background-color: #fdfdfd;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
-  max-width: 400px;
-}
-
-.newsletter-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
-.newsletter-form input[type="email"] {
-  width: 100%;
-  padding: 0.6rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-}
-
-.newsletter-form fieldset {
-  border: none;
-  margin-bottom: 1rem;
-}
-
-.newsletter-form fieldset {
-  border: none;
-  margin-bottom: 1rem;
-}
-
-.newsletter-form label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.newsletter-form input[type="checkbox"] {
-  appearance: none;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #0077cc;
-  border-radius: 4px;
-  background-color: #fff;
-  transition: background-color 0.2s ease;
-  cursor: pointer;
-  outline: none;
-}
-
-.newsletter-form input[type="checkbox"]:checked {
-  background-color: #0077cc;
-  border-color: #0077cc;
-}
-
-.newsletter-form input[type="checkbox"]:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-
-.newsletter-form button {
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.newsletter-form button:hover {
-  background-color: #005fa3;
-}
-
-.imprensa ul{
-  list-style: none;
-}
-
-</style>
 <body>
   <div class="container"> <!-- Botão dark-mode-->
         <div class="sun sun-logo" aria-label="Ativar modo claro">
@@ -182,14 +80,14 @@ a:hover {
       <h3>📘 ONG Educar para mudar lança projeto de alfabetização digital</h3>
       <p><strong>Data:</strong> 15 de setembro de 2025</p>
       <p>O novo projeto visa capacitar jovens e adultos em habilidades digitais essenciais para o mercado de trabalho.</p>
-      <a href="#">Leia mais</a>
+      <a href="#" class="btn-leia-mais">Leia mais</a>
     </article>
 
     <article>
       <h3>💰 Campanha de arrecadação supera meta em tempo recorde</h3>
       <p><strong>Data:</strong> 05 de outubro de 2025</p>
       <p>Com apoio da comunidade, arrecadamos <strong>R$ 50 mil</strong> em apenas 10 dias para o projeto <em>Saúde na Comunidade</em>.</p>
-      <a href="#">Leia mais</a>
+      <a href="#" class="btn-leia-mais">Leia mais</a>
     </article>
   </section>
 
@@ -211,7 +109,7 @@ a:hover {
 
       <button type="submit" aria-label="Assinar newsletter">Assinar Newsletter</button>
       <input type="hidden" role="uploadcare-uploader" name="arquivo" />
-      <p id="mensagem-sucesso" style="display:none;" aria-live="polite">Mensagem enviada com sucesso!</p>
+      <p id="mensagem-sucesso" aria-live="polite">Mensagem enviada com sucesso!</p>
     </form>
 
    <!-- formulário HTML puro, para teste: 
@@ -227,8 +125,8 @@ a:hover {
   <section class="imprensa">
     <h2>🗞️ Área de Imprensa</h2>
     <ul>
-      <li><a href="assets/docs/release-projeto-digital.pdf" target="_blank">📄 Release: Projeto de Alfabetização Digital</a></li>
-      <li><a href="assets/docs/release-campanha-saude.pdf" target="_blank">📄 Release: Campanha Saúde na Comunidade</a></li>
+      <li><a href="#" target="_blank">📄 Release: Projeto de Alfabetização Digital</a></li>
+      <li><a href="#" target="_blank">📄 Release: Campanha Saúde na Comunidade</a></li>
     </ul>
   </section>
 </main>

@@ -1,38 +1,51 @@
-.destaque-projetos {
-  background-image: url('../img/projeto15.png'); /* substitua pelo caminho correto */
-  background-size: cover;           /* cobre toda a área */
-  background-position: center;      /* centraliza o foco */
-  background-repeat: no-repeat;
-  width: 100%;                      /* ocupa toda a largura */
-  height:1350px;                    /* altura fixa e proporcional */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  color: #fff;
-  overflow: hidden;
-  border-radius: 10px;
+.destaque-projetos{
+  width: 35%;
+  margin: auto;
+  background-color: #fff;
 }
 
-/* Sobreposição escura para legibilidade */
-.destaque-projetos::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 1;
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    /*width: 80%;
+    height: 80%;*/
 }
 
-.overlay {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-  padding: 20px;
+figure.foto-legenda img{
+  width: 100%;
+  border: 2px solid #e7dcdcef;
 }
 
+figure.foto-legenda figcaption{
+  
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: black;
+    width: 100%;
+    height: 99%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 5s;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, .4);;
+    font-size: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, #00bfa5, #169948); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
 
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+    cursor: pointer;
+}
 .filtros {
   margin-bottom: 20px;
   text-align: center;
@@ -142,7 +155,7 @@
   background-color: #6a1b9a;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .destaque-projetos {
     height: 320px;
   }
@@ -152,4 +165,4 @@
   .overlay p {
     font-size: 1rem;
   }
-}
+} */

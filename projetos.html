@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Projetos sociais desenvolvidos pela Educar para mudar" />
   <meta name="keywords" content="ONG, projetos, voluntários, pessoas, sociais">
-  <title>Projetos | ONG Educar para mudar</title>
+  <meta property="og:title" content="Projetos Sociais - ONG Educar para Mudar">
+  <meta property="og:description" content="Conheça nossos projetos e ações realizadas.">
+  <meta property="og:image" content="asset/img/projetos-thumb.png">
   <link rel="stylesheet" href="asset/css/style.css" />
   <link rel="shortcut icon" href="asset/img/projeto-icon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="asset/img/projeto-icon.png">
   <link rel="stylesheet" href="asset/css/projetos.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <title>Projetos | ONG Educar para mudar</title>
 </head>
 <body>
   <div class="container"> <!-- Botão dark-mode-->
@@ -65,12 +69,16 @@
   <main>
     <div id="resultados" class="resultados-container"></div>
     <section class="destaque-projetos">
-      <div class="overlay">
-        <!-- <h1 class="titulo">Projetos que Transformam</h1> 
-        <p>Explore iniciativas que estão mudando vidas, fortalecendo comunidades e inspirando um futuro melhor.</p>-->
-      </div>
+      <figure  class="foto-legenda">
+        <img src="asset/img/projeto16.jpg" alt=""> 
+        <figcaption>
+          <h1>
+            ONG Educar para mudar
+          </h1>
+          <p>Inspirando um futuro melhor</p>
+        </figcaption>
+      </figure>  
     </section>
-
 
     <section>
       <h2 class="titulo">Projetos por Categoria</h2>
@@ -110,15 +118,6 @@
           </div>
         </div>
         
-        <div class="card-projeto saude">
-          <img src="asset/img/projeto2.jpg" alt="Equipe médica em ambiente hospitalar" class="card-img">
-          <div class="card-conteudo">
-            <h3><i class="fas fa-user-md"></i> Projeto Cuidar com Humanidade</h3>
-            <p>Atendimentos gratuitos realizados por profissionais da saúde em comunidades vulneráveis.</p>
-            <a href="#" class="btn-saiba-mais">Saiba mais</a>
-          </div>
-        </div>
-
         <div class="card-projeto saude">
           <img src="asset/img/projeto6.png" alt="Voluntária medindo pressão de idosa" class="card-img">
           <div class="card-conteudo">
@@ -208,12 +207,30 @@
           <a href="#" class="btn-saiba-mais">Saiba mais</a>
         </div>
       </div>
+
+       <div class="card-projeto cultura">
+        <img src="asset/img/projeto2.jpg" alt="Grupo diverso em oficina de dança cultural" class="card-img">
+        <div class="card-conteudo">
+          <h3><i class="fas fa-music"></i> Projeto Cuidando de você</h3>
+          <p>Atendimentos gratuitos realizados por profissionais da saúde em comunidades vulneráveis.</p>
+          <a href="#" class="btn-saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card-projeto saude">
+          <img src="asset/img/projeto2.jpg" alt="Equipe médica em ambiente hospitalar" class="card-img">
+          <div class="card-conteudo">
+            <h3><i class="fas fa-user-md"></i> Projeto Cuidar </h3>
+            <p>Atendimentos gratuitos realizados por profissionais da saúde em comunidades vulneráveis.</p>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
     </div>
     </section>
 
     <section>
-      <h2 class="titulo">Vídeos Institucionais</h2>
-      <p class="video-descricao titulo">Conheça nosso projeto de natação com crianças da rede pública.</p>
+      <h1 class="titulo">Vídeos Institucionais</h1>
+      <h2 class="video-descricao titulo">Conheça nosso projeto de natação com crianças da rede pública.</h2>
       <div class="video">
         <iframe width="100%" height="500" src="https://www.youtube.com/embed/_IM9ZQyAWP0?si=5v2yGL_EUDbNwVHp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
@@ -275,34 +292,34 @@
     });
   </script>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const contexto = document.getElementById('grafico-impacto').getContext('2d');
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const contexto = document.getElementById('grafico-impacto').getContext('2d');
 
-  new Chart(contexto, {
-    type: 'bar',
-    data: {
-      labels: ['Educação', 'Saúde', 'Cultura'],
-      datasets: [{
-        label: 'Pessoas Impactadas',
-        data: [500, 1200, 300],
-        backgroundColor: ['#4CAF50', '#2196F3', '#FFC107']
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          position: 'top'
-        },
-        title: {
-          display: true,
-          text: 'Indicadores de Impacto'
+    new Chart(contexto, {
+      type: 'bar',
+      data: {
+        labels: ['Educação', 'Saúde', 'Cultura'],
+        datasets: [{
+          label: 'Pessoas Impactadas',
+          data: [500, 1200, 300],
+          backgroundColor: ['#4CAF50', '#2196F3', '#FFC107']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top'
+          },
+          title: {
+            display: true,
+            text: 'Indicadores de Impacto'
+          }
         }
       }
-    }
-  });
-</script>
+    });
+  </script>
 
   <script>
     function filtrarProjetos(categoria) {

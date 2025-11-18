@@ -1,0 +1,122 @@
+main {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn-leia-mais {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4a148c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-leia-mais:hover {
+  background-color: #6a1b9a;
+}
+
+.newsletter-form {
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  max-width: 400px;
+}
+
+.newsletter-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.newsletter-form input[type="email"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form fieldset {
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form fieldset {
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.newsletter-form input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #0077cc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.newsletter-form input[type="checkbox"]:checked {
+  background-color: #0077cc;
+  border-color: #0077cc;
+}
+
+.newsletter-form input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.newsletter-form button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #005fa3;
+}
+
+.imprensa ul{
+  list-style: none;
+}
+
+
+

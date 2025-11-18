@@ -409,7 +409,6 @@ nav {
 }
 
 .impacto {
-  background-color: #f5f5f5;
   padding: 30px 20px;
   text-align: center;
   border-radius: 8px;
@@ -926,7 +925,11 @@ body.dark-mode .whats {
   background-color: #202020; /* fundo escuro no modo dark */
 }
 
-body.dark-mode .contato {
+body.dark-mode .contato{
+  background-color: #121212; /* fundo escuro no modo dark */
+}
+
+body.dark-mode .impacto{
   background-color: #121212; /* fundo escuro no modo dark */
 }
 
