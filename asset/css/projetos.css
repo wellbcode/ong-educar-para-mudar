@@ -1,15 +1,12 @@
 .destaque-projetos{
   width: 35%;
   margin: auto;
-  background-color: #fff;
 }
 
 figure.foto-legenda {
     position: relative;
     border: 8px solid white;
     box-shadow: 1px 1px 4px black;
-    /*width: 80%;
-    height: 80%;*/
 }
 
 figure.foto-legenda img{
@@ -18,7 +15,6 @@ figure.foto-legenda img{
 }
 
 figure.foto-legenda figcaption{
-  
     opacity: 0;
     position: absolute;
     text-align: center;
@@ -34,9 +30,9 @@ figure.foto-legenda figcaption{
     text-shadow: 5px 5px 10px rgba(0, 0, 0, .4);;
     font-size: 2rem;
     text-align: center;
-    background: linear-gradient(to right, #00bfa5, #169948); 
+    background: #333; 
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+
     font-weight: bold;
     margin-top: 60px;
     margin-bottom: 10px;
@@ -155,14 +151,63 @@ figure.foto-legenda:hover figcaption {
   background-color: #6a1b9a;
 }
 
-/* @media (max-width: 768px) {
-  .destaque-projetos {
-    height: 320px;
-  }
-  .titulo {
+.destaque-projetos .foto-legenda {
+  position: relative;
+  width: 100%;
+  max-height: 450px;
+}
+
+figure.foto-legenda img{
+  width: 100%;
+  border: 2px solid #e7dcdcef;
+}
+
+/* FIGCAPTION ORIGINAL AJUSTADO */
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
     font-size: 2rem;
+    background: linear-gradient(to right, #00bfa5, #169948); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centraliza texto verticalmente */
+    align-items: center;
+}
+
+figure.foto-legenda:hover figcaption {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+    .destaque-projetos {
+    width: 100%;
   }
-  .overlay p {
-    font-size: 1rem;
+}
+  figure.foto-legenda figcaption{
+    transition: opacity 5s;
+    font-size: 1.2rem;
+    padding: 20px;
   }
-} */
+
+  figure.foto-legenda figcaption h1 {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+
+  figure.foto-legenda figcaption p {
+    font-size: 2rem !important;
+  }

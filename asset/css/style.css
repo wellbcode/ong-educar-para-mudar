@@ -652,9 +652,8 @@ main {
 .titulo {
   font-size: 2rem;
   text-align: center;
-  background: linear-gradient(to right, #00bfa5, #ffffff);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #18bc9c;
   font-weight: bold;
   margin-top: 60px;
   margin-bottom: 10px;
@@ -1068,5 +1067,21 @@ body.dark-mode .impacto{
     top: 12px;
     right: 12px;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    top: 12px;
+    right: 12px;
+  }
+
+  .container .sun-logo,
+  .container .moon-logo {
+    padding: 6px;
+  }
+
+  .destaque-projetos {
+    margin-top: 90px !important; /* Evita que a imagem fique colada */
   }
 }
