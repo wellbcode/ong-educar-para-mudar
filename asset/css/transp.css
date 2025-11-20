@@ -134,9 +134,16 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .grafico-recursos .card {
-    padding: 40px;
-    min-height: 400px;
+    padding-top: 60px; /* antes: 40px */
   }
 }
+
+@media (max-width: 480px) {
+  .grafico-recursos .card {
+    padding: 60px 40px 40px;
+    min-height: 430px; /* dá mais respiro */
+  }
+}
+
