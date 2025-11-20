@@ -122,6 +122,7 @@
   margin-bottom: 15px;
 }
 
+
 .grafico-recursos .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -129,21 +130,15 @@
 
 @media (max-width: 768px) {
   .grafico-recursos .card {
-    padding: 40px;
-    min-height: 400px;
+    padding: 70px 40px 40px; /* top maior */
+    min-height: 430px;       /* garante espaço pro canvas */
   }
 }
+
 
 @media (max-width: 480px) {
   .grafico-recursos .card {
-    padding-top: 60px; /* antes: 40px */
+    padding: 70px 30px 40px;
+    min-height: 450px;
   }
 }
-
-@media (max-width: 480px) {
-  .grafico-recursos .card {
-    padding: 60px 40px 40px;
-    min-height: 430px; /* dá mais respiro */
-  }
-}
-
