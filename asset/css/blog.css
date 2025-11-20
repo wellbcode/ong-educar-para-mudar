@@ -115,9 +115,15 @@ a:hover {
   background-color: #005fa3;
 }
 
-.imprensa ul{
+.imprensa ul {
   list-style: none;
+  color: #0077cc;
 }
+
+.imprensa ul p{
+  color: #0077cc;
+}
+
 
 
 
